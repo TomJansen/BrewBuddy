@@ -24,6 +24,5 @@ begin
 end; 
 
 initialization
-{$i uniqueicon.lrs}
  
 end.
