@@ -1,12 +1,12 @@
 object frmMain: TfrmMain
-  Left = 355
-  Height = 720
-  Top = 268
-  Width = 1004
+  Left = -8
+  Height = 1017
+  Top = -8
+  Width = 1920
   BorderStyle = bsSingle
   Caption = 'BrewBuddy'
-  ClientHeight = 720
-  ClientWidth = 1004
+  ClientHeight = 1017
+  ClientWidth = 1920
   Font.Height = 14
   Menu = MainMenu1
   OnCloseQuery = FormCloseQuery
@@ -16,34 +16,34 @@ object frmMain: TfrmMain
   LCLVersion = '2.2.0.4'
   object pRecipes: TPanel
     Left = 0
-    Height = 638
+    Height = 935
     Top = 82
     Width = 236
     Align = alLeft
     BevelOuter = bvLowered
-    ClientHeight = 638
+    ClientHeight = 935
     ClientWidth = 236
     TabOrder = 0
     object pcRecipes: TPageControl
       Left = 1
-      Height = 636
+      Height = 933
       Top = 1
       Width = 234
-      ActivePage = tsBrews
+      ActivePage = tsRecipes
       Align = alClient
       ParentShowHint = False
       ShowHint = True
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 0
       object tsBrews: TTabSheet
         Hint = 'Brouwsels zijn recepten die je zelf hebt gebrouwen'
         Caption = 'Brouwsels'
-        ClientHeight = 610
+        ClientHeight = 907
         ClientWidth = 226
         ParentShowHint = False
         object tvBrews: TTreeView
           Left = 0
-          Height = 510
+          Height = 807
           Top = 40
           Width = 226
           Align = alClient
@@ -64,7 +64,7 @@ object frmMain: TfrmMain
         object pRecipesButtons: TPanel
           Left = 0
           Height = 60
-          Top = 550
+          Top = 847
           Width = 226
           Align = alBottom
           ClientHeight = 60
@@ -330,13 +330,13 @@ object frmMain: TfrmMain
       object tsRecipes: TTabSheet
         Hint = 'Recepten kunnen van jezelf zijn of van derden'
         Caption = 'Recepten'
-        ClientHeight = 610
+        ClientHeight = 907
         ClientWidth = 226
         ParentShowHint = False
         object tvRecipes: TTreeView
           Left = 0
-          Height = 512
-          Top = 38
+          Height = 807
+          Top = 40
           Width = 226
           Align = alClient
           AutoExpand = True
@@ -353,7 +353,7 @@ object frmMain: TfrmMain
         object pRecipesButtons1: TPanel
           Left = 0
           Height = 60
-          Top = 550
+          Top = 847
           Width = 226
           Align = alBottom
           ClientHeight = 60
@@ -541,11 +541,11 @@ object frmMain: TfrmMain
         end
         object pSearchRecipes: TPanel
           Left = 0
-          Height = 38
+          Height = 40
           Top = 0
           Width = 226
           Align = alTop
-          ClientHeight = 38
+          ClientHeight = 40
           ClientWidth = 226
           Font.Height = 12
           ParentFont = False
@@ -617,13 +617,13 @@ object frmMain: TfrmMain
       end
       object tsCloud: TTabSheet
         Caption = 'Cloud'
-        ClientHeight = 610
+        ClientHeight = 907
         ClientWidth = 226
         TabVisible = False
         object pCloudButtons: TPanel
           Left = 0
           Height = 59
-          Top = 551
+          Top = 848
           Width = 226
           Align = alBottom
           ClientHeight = 59
@@ -730,7 +730,7 @@ object frmMain: TfrmMain
         end
         object tvCloud: TTreeView
           Left = 0
-          Height = 551
+          Height = 848
           Top = 0
           Width = 226
           Align = alClient
@@ -747,14 +747,14 @@ object frmMain: TfrmMain
     end
   end
   object pRight: TPanel
-    Left = 864
-    Height = 638
+    Left = 1780
+    Height = 935
     Hint = 'Rekenhulpjes'
     Top = 82
     Width = 140
     Align = alRight
     BevelOuter = bvLowered
-    ClientHeight = 638
+    ClientHeight = 935
     ClientWidth = 140
     ParentColor = False
     ParentFont = False
@@ -1538,23 +1538,23 @@ object frmMain: TfrmMain
   end
   object pMain: TPanel
     Left = 236
-    Height = 638
+    Height = 935
     Top = 82
-    Width = 628
+    Width = 1544
     Align = alClient
     Alignment = taLeftJustify
     BevelOuter = bvLowered
     BidiMode = bdRightToLeft
-    ClientHeight = 638
-    ClientWidth = 628
+    ClientHeight = 935
+    ClientWidth = 1544
     ParentBidiMode = False
     ParentShowHint = False
     TabOrder = 1
     object pcAnalysis: TPageControl
       Left = 1
-      Height = 636
+      Height = 933
       Top = 1
-      Width = 626
+      Width = 1542
       ActivePage = tsAnalysisCommon
       Align = alClient
       ParentBiDiMode = False
@@ -1562,13 +1562,13 @@ object frmMain: TfrmMain
       TabOrder = 1
       object tsAnalysisCommon: TTabSheet
         Caption = 'Algemeen'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         object chCommon: TChart
           Left = 0
-          Height = 610
+          Height = 907
           Top = 0
-          Width = 618
+          Width = 1534
           AxisList = <          
             item
               Marks.LabelBrush.Style = bsClear
@@ -1607,13 +1607,13 @@ object frmMain: TfrmMain
       end
       object tsFermentables: TTabSheet
         Caption = 'Vergistbare ingrediënten'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         object chAFerm: TChart
           Left = 0
-          Height = 610
+          Height = 907
           Top = 0
-          Width = 618
+          Width = 1534
           AxisList = <          
             item
               Marks.LabelBrush.Style = bsClear
@@ -1666,16 +1666,16 @@ object frmMain: TfrmMain
       end
       object tsHops: TTabSheet
         Caption = 'Hop'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         object pAnalysisHops: TPanel
           Left = 0
           Height = 41
-          Top = 569
-          Width = 618
+          Top = 866
+          Width = 1534
           Align = alBottom
           ClientHeight = 41
-          ClientWidth = 618
+          ClientWidth = 1534
           TabOrder = 0
           object rgBitterhop: TRadioButton
             Left = 12
@@ -1707,9 +1707,9 @@ object frmMain: TfrmMain
         end
         object chAnalyseHops: TChart
           Left = 0
-          Height = 569
+          Height = 866
           Top = 0
-          Width = 618
+          Width = 1534
           AxisList = <          
             item
               Marks.LabelBrush.Style = bsClear
@@ -1774,13 +1774,13 @@ object frmMain: TfrmMain
       end
       object tsYeast: TTabSheet
         Caption = 'Gist'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         object chAnalyseYeast: TChart
           Left = 0
-          Height = 610
+          Height = 907
           Top = 0
-          Width = 618
+          Width = 1534
           AxisList = <          
             item
               Marks.LabelBrush.Style = bsClear
@@ -1819,13 +1819,13 @@ object frmMain: TfrmMain
       end
       object tsMiscs: TTabSheet
         Caption = 'Overige ingrediënten'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         object chAnalyseMiscs: TChart
           Left = 0
-          Height = 610
+          Height = 907
           Top = 0
-          Width = 618
+          Width = 1534
           AxisList = <          
             item
               Marks.LabelBrush.Style = bsClear
@@ -1885,7 +1885,7 @@ object frmMain: TfrmMain
       end
     end
     object bbShowTools: TBitBtn
-      Left = 606
+      Left = 1522
       Height = 21
       Hint = 'Toon rekenhulpjes'
       Top = 2
@@ -1936,7 +1936,7 @@ object frmMain: TfrmMain
       Visible = False
     end
     object bbHideTools: TBitBtn
-      Left = 604
+      Left = 1520
       Height = 21
       Hint = 'Verberg rekenhulpjes'
       Top = 1
@@ -1987,9 +1987,9 @@ object frmMain: TfrmMain
     end
     object pcRecipe: TPageControl
       Left = 1
-      Height = 636
+      Height = 933
       Top = 1
-      Width = 626
+      Width = 1542
       ActivePage = tsRecipe
       Align = alClient
       ParentBiDiMode = False
@@ -2000,8 +2000,8 @@ object frmMain: TfrmMain
       object tsRecipe: TTabSheet
         Hint = 'Voer ingrediënten in en bereken bitterheid, kleur en begin SG'
         Caption = 'Recept'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         ParentShowHint = False
         object gbAlgemeen: TGroupBox
           Left = 0
@@ -2943,8 +2943,8 @@ object frmMain: TfrmMain
       object tsWater: TTabSheet
         Hint = 'Voer maischschema, waterprofiel en geplande volumes in'
         Caption = 'Maischen, water'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         ParentShowHint = False
         object gbMashing: TGroupBox
           Left = 3
@@ -3777,8 +3777,8 @@ object frmMain: TfrmMain
       object tsBrewday: TTabSheet
         Hint = 'Voer metingen tijdens de brouwdag in'
         Caption = 'Metingen op de brouwdag'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         ParentShowHint = False
         object gbMeasMash: TGroupBox
           Left = 4
@@ -5079,8 +5079,8 @@ object frmMain: TfrmMain
       object tsFermentation: TTabSheet
         Hint = 'Voer gegevens over de vergisting in'
         Caption = 'Vergisting'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         ParentShowHint = False
         object gbYeast: TGroupBox
           Left = 0
@@ -6180,8 +6180,8 @@ object frmMain: TfrmMain
       object tsPackaging: TTabSheet
         Hint = 'Voer gegevens over het afvullen in'
         Caption = 'Afvullen, proeven'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         ParentShowHint = False
         object gbBottleDates: TGroupBox
           Left = 0
@@ -6962,25 +6962,25 @@ object frmMain: TfrmMain
       object tsNotes: TTabSheet
         Hint = 'Voer notities in'
         Caption = 'Notities'
-        ClientHeight = 610
-        ClientWidth = 618
+        ClientHeight = 907
+        ClientWidth = 1534
         ParentShowHint = False
         object gbNotes: TGroupBox
           Left = 0
-          Height = 534
+          Height = 831
           Top = 76
-          Width = 618
+          Width = 1534
           Align = alClient
           Caption = 'Notities'
-          ClientHeight = 516
-          ClientWidth = 614
+          ClientHeight = 813
+          ClientWidth = 1530
           ParentShowHint = False
           TabOrder = 1
           object mNotes: TMemo
             Left = 0
-            Height = 516
+            Height = 813
             Top = 0
-            Width = 614
+            Width = 1530
             Align = alClient
             OnChange = mNotesChange
             ParentShowHint = False
@@ -6992,11 +6992,11 @@ object frmMain: TfrmMain
           Left = 0
           Height = 76
           Top = 0
-          Width = 618
+          Width = 1534
           Align = alTop
           Caption = 'Brouwers'
           ClientHeight = 58
-          ClientWidth = 614
+          ClientWidth = 1530
           ParentShowHint = False
           TabOrder = 0
           object Label45: TLabel
@@ -7049,7 +7049,7 @@ object frmMain: TfrmMain
     Left = 0
     Height = 82
     Top = 0
-    Width = 1004
+    Width = 1920
     ActivePage = tsFile
     Align = alTop
     ParentFont = False
@@ -7058,12 +7058,12 @@ object frmMain: TfrmMain
     object tsFile: TTabSheet
       Caption = 'Bestand'
       ClientHeight = 54
-      ClientWidth = 996
+      ClientWidth = 1912
       object tbFile: TToolBar
         Left = 0
         Height = 54
         Top = 0
-        Width = 996
+        Width = 1912
         Align = alClient
         ButtonHeight = 45
         ButtonWidth = 45
@@ -7190,12 +7190,12 @@ object frmMain: TfrmMain
     object tsDatabases: TTabSheet
       Caption = 'Databanken'
       ClientHeight = 54
-      ClientWidth = 996
+      ClientWidth = 1912
       object tbDatabases: TToolBar
         Left = 0
         Height = 50
         Top = 0
-        Width = 996
+        Width = 1912
         ButtonHeight = 45
         ButtonWidth = 45
         Caption = 'tbDatabases'
@@ -7384,13 +7384,13 @@ object frmMain: TfrmMain
     object tsAnalysis: TTabSheet
       Caption = 'Analyse'
       ClientHeight = 54
-      ClientWidth = 996
+      ClientWidth = 1912
       TabVisible = False
       object ToolBar1: TToolBar
         Left = 0
         Height = 54
         Top = 0
-        Width = 996
+        Width = 1912
         Align = alClient
         ButtonHeight = 45
         ButtonWidth = 45
@@ -7488,7 +7488,7 @@ object frmMain: TfrmMain
     object tsOptions: TTabSheet
       Caption = 'Instellingen'
       ClientHeight = 54
-      ClientWidth = 996
+      ClientWidth = 1912
       ParentFont = False
       object pSettings1: TPanel
         Left = 0
