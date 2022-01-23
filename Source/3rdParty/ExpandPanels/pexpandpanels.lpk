@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <CONFIG>
-  <Package Version="4">
+  <Package Version="3">
     <Name Value="Pexpandpanels"/>
-    <Type Value="RunAndDesignTime"/>
-    <AddToProjectUsesSection Value="True"/>
     <CompilerOptions>
-      <Version Value="11"/>
+      <Version Value="9"/>
       <SearchPaths>
         <OtherUnitFiles Value="$(LazarusDir)/components/gradbutton/package"/>
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
@@ -15,8 +13,11 @@
           <UseAnsiStrings Value="False"/>
         </SyntaxOptions>
       </Parsing>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
     </CompilerOptions>
-    <Version Major="2" Minor="2" Release="2"/>
+    <Version Major="2"/>
     <Files Count="1">
       <Item1>
         <Filename Value="expandpanels.pas"/>
@@ -24,6 +25,7 @@
         <UnitName Value="ExpandPanels"/>
       </Item1>
     </Files>
+    <Type Value="RunAndDesignTime"/>
     <RequiredPkgs Count="2">
       <Item1>
         <PackageName Value="LCL"/>
@@ -41,8 +43,5 @@
       <Version Value="2"/>
       <IgnoreBinaries Value="False"/>
     </PublishOptions>
-    <CustomOptions Items="ExternHelp" Version="2">
-      <_ExternHelp Items="Count"/>
-    </CustomOptions>
   </Package>
 </CONFIG>
