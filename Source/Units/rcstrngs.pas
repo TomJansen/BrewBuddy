@@ -534,7 +534,7 @@ resourcestring
   exportfilter1 = 'BrouwHulp XML|*.xml|BeerXML (*.xml)|*.xml|HTML pagina|*.html';
   exportsucces1 = 'Export geslaagd';
   copysucces1 = 'Kopiëren geslaagd';
-  manualname1 = 'Introductie BrouwHulp Eroica.pdf';
+  manualname1 = 'Introductie BrouwHulp Sassy Saison.pdf';
   choosebackupfolder1 = 'Kies backup map';
   fermentableschart1 = 'Grafiek eigenschappen vergistbare ingrediënten';
   hopchart1 = 'Grafiek hopeigenschappen';
