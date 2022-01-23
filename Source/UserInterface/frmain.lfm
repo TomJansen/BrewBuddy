@@ -7102,22 +7102,6 @@ object frmMain: TfrmMain
           Caption = 'tbSep2'
           Style = tbsSeparator
         end
-        object tbExit: TToolButton
-          Left = 482
-          Hint = 'Sluit programma'
-          Top = 0
-          Caption = 'tbExit'
-          ImageIndex = 10
-          ParentShowHint = False
-          ShowHint = True
-        end
-        object ToolButton2: TToolButton
-          Left = 278
-          Height = 45
-          Top = 0
-          Caption = 'ToolButton2'
-          Style = tbsSeparator
-        end
         object tbSave: TToolButton
           Left = 188
           Hint = 'Sla op'

@@ -235,7 +235,6 @@ type
     tbImport: TToolButton;
     tbExport: TToolButton;
     tbSep2: TToolButton;
-    tbExit: TToolButton;
     ToolButton2: TToolButton;
     tbSave: TToolButton;
     tbPrintPreview: TToolButton;
@@ -809,7 +808,6 @@ type
     procedure tbBackupClick(Sender: TObject);
     procedure tbBeerstylesClick(Sender: TObject);
     procedure tbEquipmentClick(Sender: TObject);
-    procedure tbExitClick(Sender: TObject);
     procedure tbExportClick(Sender: TObject);
     procedure tbFermChartClick(Sender: TObject);
     procedure tbFermentablespClick(Sender: TObject);
@@ -2904,11 +2902,6 @@ end;
    //cbBrewsSortChange(self);
    //NameChange;
    //Screen.Cursor:= crDefault;
- end;
-
- procedure TfrmMain.tbExitClick(Sender: TObject);
- begin
-   Close;
  end;
 
  {===========================  Databases  ======================================}
@@ -9037,7 +9030,6 @@ procedure TfrmMain.cbMashChange(Sender: TObject);
   tsOptions.Caption:= settings1;
   tbImport.Hint:= importhint1;
   tbExport.Hint:= exporthint1;
-  tbExit.Hint:= exithint1;
   tbSave.Hint:= savehint1;
   tbPrintPreview.Hint:= printpreviewhint1;
   tbCopyClipboard.Hint:= copyclipboardhint1;

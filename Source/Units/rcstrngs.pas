@@ -26,7 +26,6 @@ resourcestring
   printpreviewhint1 = 'Druk logboekformulier af';
   brewslisthint1 = 'Maak lijst van brouwsels';
   helphint1 = 'Open de handleiding';
-  exithint1 = 'Sluit programma';
 //Data tab
   fermentableshint1 = 'Open de database met vergistbare ingrediënten';
   hopshint1 = 'Open de hop database';
