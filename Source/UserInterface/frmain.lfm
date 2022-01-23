@@ -10633,18 +10633,22 @@ object frmMain: TfrmMain
     Top = 152
     object miBrewsImport: TMenuItem
       Caption = 'Importeer'
+      OnClick = tbImportClick
     end
     object miBrewsExport: TMenuItem
       Caption = 'Exporteer'
+      OnClick = tbExportClick
     end
     object MenuItem1: TMenuItem
       Caption = '-'
     end
     object miBrewsCopyToClipboardForum: TMenuItem
       Caption = 'Kopieer in forum opmaak'
+      OnClick = tbCopyClipboardClick
     end
     object miBrewsCopyHTML: TMenuItem
       Caption = 'Kopieer in html opmaak'
+      OnClick = tbCopyHTMLClick
     end
     object MenuItem2: TMenuItem
       Caption = '-'
@@ -10664,9 +10668,11 @@ object frmMain: TfrmMain
     object miBrewsNew: TMenuItem
       Caption = 'Nieuw brouwsel'
       GroupIndex = 2
+      OnClick = bbNewBrewClick
     end
     object miBrewsDelete: TMenuItem
       Caption = 'Verwijder brouwsel'
+      OnClick = bbRemoveBrewClick
     end
     object MenuItem7: TMenuItem
       Caption = '-'
@@ -10681,18 +10687,22 @@ object frmMain: TfrmMain
     Top = 152
     object miRecipesImport: TMenuItem
       Caption = 'Importeer'
+      OnClick = tbImportClick
     end
     object miRecipesExport: TMenuItem
       Caption = 'Exporteer'
+      OnClick = tbExportClick
     end
     object MenuItem4: TMenuItem
       Caption = '-'
     end
     object miRecipesCopyToClipboardForum: TMenuItem
       Caption = 'Kopieer in forum opmaak'
+      OnClick = tbCopyClipboardClick
     end
     object miRecipesCopyHTML: TMenuItem
       Caption = 'Kopieer in html opmaak'
+      OnClick = tbCopyHTMLClick
     end
     object MenuItem5: TMenuItem
       Caption = '-'
@@ -10712,9 +10722,11 @@ object frmMain: TfrmMain
     object miRecipesNew: TMenuItem
       Caption = 'Nieuw recept'
       GroupIndex = 2
+      OnClick = bbNewRecipeClick
     end
     object miRecipesDelete: TMenuItem
       Caption = 'Verwijder recept'
+      OnClick = bbRemoveRecipeClick
     end
   end
   object dticsX: TDateTimeIntervalChartSource
