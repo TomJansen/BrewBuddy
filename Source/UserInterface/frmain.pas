@@ -56,8 +56,6 @@ type
     cbColorMethod: TComboBox;
     cbIBUMethod: TComboBox;
     cbCloudSort: TComboBox;
-    cbShowSplash: TCheckBox;
-    cbPlaySounds: TCheckBox;
     cbAdjustAlpha: TCheckBox;
     eABV2: TEdit;
     eABVest: TEdit;
@@ -160,6 +158,7 @@ type
     lSVG1: TLabel;
     lTemp: TLabel;
     lTopUpWater1: TLabel;
+    MainMenu1: TMainMenu;
     miCheckPrint: TMenuItem;
     miCheckWindow: TMenuItem;
     miInventoryClipboard: TMenuItem;
@@ -690,8 +689,6 @@ type
     procedure cbAdjustAlphaChange(Sender: TObject);
     //procedure cbCloudSortChange(Sender: TObject);
     procedure cbCoolingMethodChange(Sender: TObject);
-    procedure cbPlaySoundsChange(Sender: TObject);
-    procedure cbShowSplashChange(Sender: TObject);
     procedure cbStarterMadeChange(Sender: TObject);
     procedure cbStarterTypeChange(Sender: TObject);
     procedure cbYeastAddedAsChange(Sender: TObject);
@@ -1066,18 +1063,6 @@ begin
 
   FUserClicked:= false;
   FSortGrid:= TRUE;
-  {if Settings.ShowSplash.Value then
-  begin
-    frmsplash:= TFrmSplash.Create(self);
-    frmsplash.Execute;
-  end;
-  if Settings.PlaySounds.Value then
-  begin
-    Application.ProcessMessages;
-    PlayStartProg;
-    Application.ProcessMessages;
-  end;
-  }
   Screen.Cursor:= crHourglass;
 
   epRight.AddPanel(mroSG);
@@ -1100,10 +1085,6 @@ begin
     iLogo.Picture.LoadFromFile(Settings.DataLocation.Value + 'logo.png');
 
   FUserClicked:= false;
-  b:= Settings.ShowSplash.Value;
-  cbShowSplash.Checked:= b;
-  b:= Settings.PlaySounds.Value;
-  cbPlaySounds.Checked:= b;
   cbAdjustAlpha.Checked:= Settings.AdjustAlfa.Value;
 
   FLabelFileName:= Settings.DataLocation.Value;
@@ -1496,10 +1477,7 @@ begin
     inc(w);
   end;
   if Equipments.NumItems = 0 then
-  begin
-    PlayWarning;
     ShowNotification(self, equimpentwarning2);
-  end;
   Settings.Style.SetControlsStyle(self);
   hcMash.Font.Height:= Settings.Style.Font.Height - 2;
 //  tsOptions.Font.Height:= Settings.Style.Font.Height - 2;
@@ -1515,18 +1493,6 @@ end;
 
 procedure TfrmMain.FormDestroy(Sender: TObject);
 begin
-//  Log('');
-//  Log('MAINWINDOW');
-  if Settings.PlaySounds.Value then
-  begin
- //   PlayEndProg;
-//    Log('Eindgeluid afgespeeld');
-    Application.ProcessMessages;
-//    {$ifdef Linux}
-    Delay(2000);
-//    {$endif}
-  end;
-
   SetLength(FIngredientGridColors, 0);
   SetLength(FInventoryColors, 0);
 //  Log('IngredientGridColors afgesloten');
@@ -3446,24 +3412,6 @@ end;
      ShowNotification(self, databaselocationset1);
    end;
    FrmDatabaseLocation.Free;
- end;
-
- procedure TfrmMain.cbShowSplashChange(Sender: TObject);
- begin
-   if FUSerClicked then
-   begin
-     Settings.ShowSplash.Value:= cbShowSplash.Checked;
-     Settings.Save;
-   end;
- end;
-
- procedure TfrmMain.cbPlaySoundsChange(Sender: TObject);
- begin
-   if FUserClicked then
-   begin
-     Settings.PlaySounds.Value:= cbPlaySounds.Checked;
-     Settings.Save;
-   end;
  end;
 
  {===========================  Popupmenu brews and recipes  ====================}
@@ -9143,10 +9091,6 @@ procedure TfrmMain.cbMashChange(Sender: TObject);
   cbAdjustAlpha.Hint:= adjustalfahint1;
   bbDatabaseLocation.Caption:= databaselocation1;
   bbDatabaseLocation.Hint:= databaselocationhint1;
-  cbShowSplash.Caption:= showsplash1;
-  cbShowSplash.Hint:= showsplashhint1;
-  cbPlaySounds.Caption:= playsounds1;
-  cbPlaySounds.Hint:= playsoundshint1;
   bbLogo.Caption:= logo1;
   bbLogo.Hint:= logohint1;
   //pcrecipes

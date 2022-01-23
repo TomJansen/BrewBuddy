@@ -60,10 +60,6 @@ resourcestring
   adjustalfahint1 = 'Schakel automatische berekening hopveroudering aan of uit';
   databaselocation1 = 'Databank locatie';
   databaselocationhint1 = 'Verplaats de databanken of open andere databanken';
-  showsplash1 = 'Splashscreen';
-  showsplashhint1 = 'Laat splashscreen zien bij opstarten';
-  playsounds1 = 'Geluiden';
-  playsoundshint1 = 'Laat begin- en eindtunes horen';
   logo1 = 'Importeer logo';
   logohint1 = 'Importeer je eigen brouwerij logo';
 

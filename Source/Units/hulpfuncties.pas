@@ -1,7 +1,5 @@
 unit Hulpfuncties;
 
-// temporarily removed the whole OpenAL sound library from the program for Linux since it causes weird floating point exceptions
-
 interface
 uses
   {$ifdef unix}clocale,{$endif} Classes, SysUtils, Variants, Math, Graphics,
@@ -220,7 +218,7 @@ var
 //  dat: TALVoid;  //TALVoid;
 //  {$endif}
 
-  StartSound, EndSound, WarningSound, AlarmSound : string;
+  AlarmSound : string;
 
   slLog : TStringList;
 
@@ -336,9 +334,6 @@ Function CarbCO2toPressure(CO2 : double; T : double) : double;
 Function CarbPressuretoCO2(P : double; T : double) : double;
 Function ActualIBU(origibu, HSI, Temp : double; Elapsed, storagetype : longint) : double;
 
-Procedure PlayStartProg;
-Procedure PlayEndProg;
-Procedure PlayWarning;
 Procedure PlayAlarm;
 
 //Procedure SetFontHeight(F : TForm; fs : integer);
@@ -2328,44 +2323,6 @@ begin
   end;
 end;}
 
-Procedure PlayStartProg;
-var sound : TProcess;
-begin
-//  {$ifdef linux}
-//  AlSourcePlay(source[startprog]);
-//  {$endif}
-  {$ifdef darwin}
-  sound:= TProcess.Create(NIL);
-  sound.CommandLine:= 'afplay ' + StartSound;
-  sound.Execute;
-  sound.Free;
-  {$endif}
-  {$ifdef windows}
-  Application.ProcessMessages;
-  sndPlaySound(PChar(StartSound), snd_Async or snd_NoDefault);//snd_Async or snd_NoDefault);
-  Application.ProcessMessages;
-  {$endif}
-end;
-
-Procedure PlayWarning;
-var sound : TProcess;
-begin
-//  {$ifdef linux}
-//  AlSourcePlay(source[warning]);
-//  {$endif}
-  {$ifdef darwin}
-  sound:= TProcess.Create(NIL);
-  sound.CommandLine:= 'afplay ' + StartSound;
-  sound.Execute;
-  sound.Free;
-  {$endif}
-  {$ifdef windows}
-  Application.ProcessMessages;
-  sndPlaySound(PChar(WarningSound), snd_Async or snd_NoDefault);//snd_Async or snd_NoDefault);
-  Application.ProcessMessages;
-  {$endif}
-end;
-
 Procedure PlayAlarm;
 var sound : TProcess;
 begin
@@ -2381,25 +2338,6 @@ begin
   {$ifdef windows}
   Application.ProcessMessages;
   sndPlaySound(PChar(AlarmSound), snd_Async or snd_NoDefault);//snd_Async or snd_NoDefault);
-  Application.ProcessMessages;
-  {$endif}
-end;
-
-Procedure PlayEndProg;
-var sound : TProcess;
-begin
-//  {$ifdef linux}
-//  AlSourcePlay(source[endprog]);
-//  {$endif}
-  {$ifdef darwin}
-  sound:= TProcess.Create(NIL);
-  sound.CommandLine:= 'afplay ' + StartSound;
-  sound.Execute;
-  sound.Free;
-  {$endif}
-  {$ifdef windows}
-  Application.ProcessMessages;
-  sndPlaySound(PChar(EndSound), snd_Async or snd_NoDefault);//snd_Async or snd_NoDefault);
   Application.ProcessMessages;
   {$endif}
 end;
@@ -2450,9 +2388,6 @@ Initialization
   WaterColor:= RGBtoColor(120, 255, 250);
 
   AlarmSound:= SoundFolder + 'alarm.wav';
-  StartSound:= SoundFolder + 'welcome.wav';
-  EndSound:= SoundFolder + 'end.wav';
-  WarningSound:= SoundFolder + 'warning.wav';
 
 //  {$ifdef linux}
 //  //Initialize the sound system

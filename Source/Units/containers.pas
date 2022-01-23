@@ -3130,10 +3130,6 @@ begin
   CheckFile('/usr/share/doc/brewbuddy/', destdata, 'Introductie BrewBuddy Sassy Saison.pdf');
   {$endif}
   CheckFile(sourcesounds, destsounds, 'alarm.wav');
-//  CheckFile(sourcesounds, destsounds, 'alarm02.wav');
-  CheckFile(sourcesounds, destsounds, 'end.wav');
-  CheckFile(sourcesounds, destsounds, 'warning.wav');
-  CheckFile(sourcesounds, destsounds, 'welcome.wav');
 end;
 
 Procedure Reload;
