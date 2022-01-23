@@ -25,7 +25,6 @@ resourcestring
   checklisthint1 = 'Druk checklist af';
   printpreviewhint1 = 'Druk logboekformulier af';
   brewslisthint1 = 'Maak lijst van brouwsels';
-  infohint1 = 'Informatie over BrouwHulp';
   helphint1 = 'Open de handleiding';
   exithint1 = 'Sluit programma';
 //Data tab

@@ -210,7 +210,6 @@ type
     ToolButton11: TToolButton;
     tbHelp: TToolButton;
     ToolButton12: TToolButton;
-    ToolButton13: TToolButton;
     tvCloud: TTreeView;
     tsCloud: TTabSheet;
     tBoilTimer: TTimer;
@@ -338,7 +337,6 @@ type
     MenuItem7: TMenuItem;
     miDivideBrew: TMenuItem;
     ToolButton1: TToolButton;
-    tbInfo: TToolButton;
     tbSynchronize: TToolButton;
     tbBrewsList: TToolButton;
     catSG: TChartAxisTransformations;
@@ -913,7 +911,6 @@ type
     procedure tbInventoryListClick(Sender: TObject);
     procedure miDivideBrewClick(Sender: TObject);
     procedure fseEvaporationChange(Sender: TObject);
-    procedure tbInfoClick(Sender: TObject);
     procedure tbSynchronizeClick(Sender: TObject);
     procedure tbBrewsListClick(Sender: TObject);
     procedure cbRecipesSortChange(Sender: TObject);
@@ -1000,8 +997,8 @@ uses Crt, Math, FrFermentables, frfermentables3, fradjustto100,
      FrRestoreDatabases, FrPropagation, FrRefractometer, FrBoilMethod,
      FrHopStorage, FrGristWizard, FrHopWizard, FrMeasurements, FrHopGraph,
      FrFermentables2, fryeasts2, FrHop2, FrMiscs2, FDatabaseLocation,
-     FrRecipeToBrew, FrDivideBrew, FrInfo
-     {, FrAnalysis, FrHistogram
+     FrRecipeToBrew, FrDivideBrew
+     {FrInfo, FrAnalysis, FrHistogram
     FrNotification,
      frsplash,  frsynchronize, ,
      cloud, frnn, neuroot
@@ -2793,15 +2790,6 @@ end;
  //   end;
  //
  //end;
-
- procedure TfrmMain.tbInfoClick(Sender: TObject);
- begin
-
-    frmInfo:= TfrmInfo.Create(self);
-    frmInfo.Execute;
-    frmInfo.Free;
-
- end;
 
  procedure TfrmMain.tbHelpClick(Sender: TObject);
  var FN : string;
@@ -9054,7 +9042,6 @@ procedure TfrmMain.cbMashChange(Sender: TObject);
   tbPrintPreview.Hint:= printpreviewhint1;
   tbCopyClipboard.Hint:= copyclipboardhint1;
   tbCopyHTML.Hint:= copyHTMLhint1;
-  tbInfo.Hint:= infohint1;
   tbSynchronize.Hint:= synchronizehint1;
   tbBrewsList.Hint:= brewslisthint1;
   tbChecklist.Hint:= checklisthint1;

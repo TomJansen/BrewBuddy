@@ -7050,10 +7050,10 @@ object frmMain: TfrmMain
     Height = 82
     Top = 0
     Width = 1004
-    ActivePage = tsOptions
+    ActivePage = tsFile
     Align = alTop
     ParentFont = False
-    TabIndex = 3
+    TabIndex = 0
     TabOrder = 2
     object tsFile: TTabSheet
       Caption = 'Bestand'
@@ -7103,7 +7103,7 @@ object frmMain: TfrmMain
           Style = tbsSeparator
         end
         object tbExit: TToolButton
-          Left = 535
+          Left = 482
           Hint = 'Sluit programma'
           Top = 0
           Caption = 'tbExit'
@@ -7166,21 +7166,11 @@ object frmMain: TfrmMain
           ShowHint = True
         end
         object ToolButton1: TToolButton
-          Left = 527
+          Left = 474
           Height = 45
           Top = 0
           Caption = 'ToolButton1'
           Style = tbsSeparator
-        end
-        object tbInfo: TToolButton
-          Left = 429
-          Hint = 'Informatie over BrouwHulp'
-          Top = 0
-          Caption = 'Info'
-          ImageIndex = 9
-          OnClick = tbInfoClick
-          ParentShowHint = False
-          ShowHint = True
         end
         object tbSynchronize: TToolButton
           Left = 233
@@ -7213,7 +7203,7 @@ object frmMain: TfrmMain
           ShowHint = True
         end
         object tbHelp: TToolButton
-          Left = 482
+          Left = 429
           Hint = 'Open de handleiding'
           Top = 0
           Caption = 'Handleiding'
@@ -7221,13 +7211,6 @@ object frmMain: TfrmMain
           OnClick = tbHelpClick
           ParentShowHint = False
           ShowHint = True
-        end
-        object ToolButton13: TToolButton
-          Left = 474
-          Height = 45
-          Top = 0
-          Caption = 'ToolButton13'
-          Style = tbsSeparator
         end
       end
     end
@@ -7688,17 +7671,17 @@ object frmMain: TfrmMain
         end
       end
       object pSettings2: TPanel
-        Left = 160
+        Left = 385
         Height = 54
         Top = 0
         Width = 165
         Align = alLeft
         BevelOuter = bvNone
         ClientHeight = 54
-        ClientWidth = 272
+        ClientWidth = 165
         TabOrder = 1
         object Bevel2: TBevel
-          Left = 270
+          Left = 163
           Height = 54
           Top = 0
           Width = 2
@@ -7785,7 +7768,7 @@ object frmMain: TfrmMain
         end
       end
       object Panel1: TPanel
-        Left = 657
+        Left = 550
         Height = 54
         Top = 0
         Width = 170
