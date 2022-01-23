@@ -7168,6 +7168,7 @@ object frmMain: TfrmMain
           Top = 0
           Caption = 'tbBrewsList'
           ImageIndex = 6
+          OnClick = tbBrewsListClick
           ParentShowHint = False
           ShowHint = True
         end
