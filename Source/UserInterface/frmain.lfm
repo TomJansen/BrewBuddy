@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
-  Left = 455
+  Left = 355
   Height = 720
-  Top = 195
+  Top = 268
   Width = 1004
   BorderStyle = bsSingle
   Caption = 'BrewBuddy'
@@ -7113,7 +7113,7 @@ object frmMain: TfrmMain
           ShowHint = True
         end
         object tbPrintPreview: TToolButton
-          Left = 331
+          Left = 278
           Hint = 'Druk logboekformulier af'
           Top = 0
           Caption = 'tbPrintPreview'
@@ -7123,7 +7123,7 @@ object frmMain: TfrmMain
           ShowHint = True
         end
         object ToolButton6: TToolButton
-          Left = 421
+          Left = 368
           Height = 45
           Top = 0
           Caption = 'ToolButton6'
@@ -7150,25 +7150,14 @@ object frmMain: TfrmMain
           ShowHint = True
         end
         object ToolButton1: TToolButton
-          Left = 474
+          Left = 421
           Height = 45
           Top = 0
           Caption = 'ToolButton1'
           Style = tbsSeparator
         end
-        object tbSynchronize: TToolButton
-          Left = 233
-          Hint = 'Synchroniseer data'
-          Top = 0
-          Caption = 'tbSynchronize'
-          Enabled = False
-          ImageIndex = 5
-          OnClick = tbSynchronizeClick
-          ParentShowHint = False
-          ShowHint = True
-        end
         object tbBrewsList: TToolButton
-          Left = 376
+          Left = 323
           Hint = 'Maak overzichtlijst van brouwsels'
           Top = 0
           Caption = 'tbBrewsList'
@@ -7177,7 +7166,7 @@ object frmMain: TfrmMain
           ShowHint = True
         end
         object tbChecklist: TToolButton
-          Left = 286
+          Left = 233
           Hint = 'Druk checklist af'
           Top = 0
           Caption = 'tbChecklist'
@@ -7187,7 +7176,7 @@ object frmMain: TfrmMain
           ShowHint = True
         end
         object tbHelp: TToolButton
-          Left = 429
+          Left = 376
           Hint = 'Open de handleiding'
           Top = 0
           Caption = 'Handleiding'

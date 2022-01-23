@@ -336,7 +336,6 @@ type
     MenuItem7: TMenuItem;
     miDivideBrew: TMenuItem;
     ToolButton1: TToolButton;
-    tbSynchronize: TToolButton;
     tbBrewsList: TToolButton;
     catSG: TChartAxisTransformations;
     catSGLinearAxisTransform1: TLinearAxisTransform;
@@ -909,7 +908,6 @@ type
     procedure tbInventoryListClick(Sender: TObject);
     procedure miDivideBrewClick(Sender: TObject);
     procedure fseEvaporationChange(Sender: TObject);
-    procedure tbSynchronizeClick(Sender: TObject);
     procedure tbBrewsListClick(Sender: TObject);
     procedure cbRecipesSortChange(Sender: TObject);
     procedure fseTimeAerationChange(Sender: TObject);
@@ -2884,25 +2882,6 @@ procedure TfrmMain.tvBrewsChanging(Sender: TObject; Node: TTreeNode;
    end;
    FUserClicked:= true; // Reset FUserClicked
 end;
-
- procedure TfrmMain.tbSynchronizeClick(Sender: TObject);
- begin
-   //AskToSave;
-   ////frmFTPList:= TfrmFTPList.Create(self);
-   ////frmFTPList.ShowModal;
-   ////frmFTPList.Free;
-   ////reload database files
-   //Screen.Cursor:= crHourglass;
-   //Settings.Save;
-   //FUserClicked:= false;
-   //Reload;
-   ////refresh the data
-   //FChanged:= false;
-   //cbRecipesSortChange(self);
-   //cbBrewsSortChange(self);
-   //NameChange;
-   //Screen.Cursor:= crDefault;
- end;
 
  {===========================  Databases  ======================================}
 
@@ -9034,7 +9013,6 @@ procedure TfrmMain.cbMashChange(Sender: TObject);
   tbPrintPreview.Hint:= printpreviewhint1;
   tbCopyClipboard.Hint:= copyclipboardhint1;
   tbCopyHTML.Hint:= copyHTMLhint1;
-  tbSynchronize.Hint:= synchronizehint1;
   tbBrewsList.Hint:= brewslisthint1;
   tbChecklist.Hint:= checklisthint1;
   tbHelp.Hint:= helphint1;

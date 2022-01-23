@@ -21,7 +21,6 @@ resourcestring
   copyclipboardhint1 = 'Kopieer naar klembord in forumopmaak';
   copyHTMLhint1 = 'Kopieer naar klembord in HTML-opmaak';
   savehint1 = 'Sla op';
-  synchronizehint1 = 'Synchroniseer data';
   checklisthint1 = 'Druk checklist af';
   printpreviewhint1 = 'Druk logboekformulier af';
   brewslisthint1 = 'Maak lijst van brouwsels';
