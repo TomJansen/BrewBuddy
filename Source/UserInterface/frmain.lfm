@@ -7095,7 +7095,7 @@ object frmMain: TfrmMain
           Hint = 'Exporteer recept'
           Top = 0
           Caption = 'tbExport'
-          Enabled = False
+          Enabled = True
           ImageIndex = 1
           OnClick = tbExportClick
           ParentShowHint = False
