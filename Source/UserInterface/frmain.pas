@@ -763,6 +763,7 @@ type
       Section: THeaderSection);
     procedure fseTunCmChange(Sender: TObject);
     procedure fseTunVolumeChange(Sender: TObject);
+    procedure Label14Click(Sender: TObject);
     procedure miCheckPrintClick(Sender: TObject);
     procedure miCheckWindowClick(Sender: TObject);
     //procedure miCloudToBrewsClick(Sender: TObject);
@@ -1184,7 +1185,8 @@ begin
   piABV2:= TPosInterval.Create(tsMeasSimple);
   piABV2.Parent:= tsMeasSimple;
   piABV2.Left:= 2;
-  piABV2.Top:= 320;
+  //piABV2.Top:= 320;
+  piABV2.Top:= 390;
   piABV2.Width:= 308;
   piABV2.Height:= 40;
   piABV2.Font.Height:= Font.Height;
@@ -1200,7 +1202,8 @@ begin
   piCarbBottles:= TPosInterval.Create(gbBottles);
   piCarbBottles.Parent:= gbBottles;
   piCarbBottles.Left:= 2;
-  piCarbBottles.Top:= 200;
+  //piCarbBottles.Top:= 200;
+  piCarbBottles.Top:= 230;
   piCarbBottles.Width:= 290;
   piCarbBottles.Height:= 40;
   piCarbBottles.Font.Height:= Font.Height;
@@ -1216,7 +1219,8 @@ begin
   piCarbKegs:= TPosInterval.Create(gbKegs);
   piCarbKegs.Parent:= gbKegs;
   piCarbKegs.Left:= 2;
-  piCarbKegs.Top:= 250;
+  //piCarbKegs.Top:= 250;
+  piCarbKegs.Top:= 300;
   {$ifdef Linux}
   piCarbKegs.Top:= 250;
   {$endif}
@@ -7079,6 +7083,11 @@ procedure TfrmMain.cbMashChange(Sender: TObject);
      FUserClicked:= TRUE;
    end;
  end;
+
+procedure TfrmMain.Label14Click(Sender: TObject);
+begin
+
+end;
 
  procedure TfrmMain.fseLauterCmChange(Sender: TObject);
  var cm : double;
