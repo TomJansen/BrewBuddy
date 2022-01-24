@@ -2865,6 +2865,7 @@ object frmMain: TfrmMain
               FF00FFFFFF00FFFFFF00
             }
             Layout = blGlyphBottom
+            OnClick = sbGristWizardClick
             ShowHint = True
             ParentShowHint = False
           end
