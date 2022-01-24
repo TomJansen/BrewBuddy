@@ -27,21 +27,24 @@
       <FormatVersion Value="2"/>
     </RunParams>
     <RequiredPackages Count="5">
-      <Item1>
-        <PackageName Value="uniqueinstance_package"/>
+	  <Item1>
+        <PackageName Value="TAChartPrint"/>
       </Item1>
       <Item2>
-        <PackageName Value="Pexpandpanels"/>
+        <PackageName Value="uniqueinstance_package"/>
       </Item2>
       <Item3>
-        <PackageName Value="Printer4Lazarus"/>
+        <PackageName Value="Pexpandpanels"/>
       </Item3>
       <Item4>
-        <PackageName Value="TAChartLazarusPkg"/>
+        <PackageName Value="Printer4Lazarus"/>
       </Item4>
       <Item5>
-        <PackageName Value="LCL"/>
+        <PackageName Value="TAChartLazarusPkg"/>
       </Item5>
+      <Item6>
+        <PackageName Value="LCL"/>
+      </Item6>
     </RequiredPackages>
     <Units Count="100">
       <Unit0>
@@ -116,6 +119,7 @@
       <Unit14>
         <Filename Value="Units\positieinterval.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="PositieInterval"/>
       </Unit14>
       <Unit15>
         <Filename Value="Units\subs.pas"/>
@@ -150,7 +154,9 @@
       <Unit22>
         <Filename Value="UserInterface\franalysis.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmAnalysis"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit22>
       <Unit23>
         <Filename Value="UserInterface\frbeerstyles.lfm"/>

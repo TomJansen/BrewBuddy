@@ -81,7 +81,7 @@ implementation
 
 {$R *.lfm}
 uses Data, Containers, LCLType, Math, TAChartAxis, TAChartUtils, TACustomSource,
-     TADrawerSVG, TADrawUtils, TADrawerCanvas, OSPrinters, {TAPrint, }Printers,
+     TADrawerSVG, TADrawUtils, TADrawerCanvas, OSPrinters, TAPrint, Printers,
      hulpfuncties;
 
 { TFrmAnalysis }

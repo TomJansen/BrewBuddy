@@ -993,16 +993,9 @@ uses Crt, Math, FrFermentables, frfermentables3, fradjustto100,
      FrRestoreDatabases, FrPropagation, FrRefractometer, FrBoilMethod,
      FrHopStorage, FrGristWizard, FrHopWizard, FrMeasurements, FrHopGraph,
      FrFermentables2, fryeasts2, FrHop2, FrMiscs2, FDatabaseLocation,
-     FrRecipeToBrew, FrDivideBrew
-     {FrInfo, FrAnalysis, FrHistogram
-    FrNotification,
-     frsplash,  frsynchronize, ,
-     cloud, frnn, neuroot
-     , , , rcstrngs}
+     FrRecipeToBrew, FrDivideBrew, FrHistogram, FrAnalysis
+     {FrInfo, FrNotification, frsplash,  frsynchronize, cloud, frnn, neuroot, rcstrngs}
      // Possibly not used
-     {
-
-     }
      ;
 
 
@@ -3215,18 +3208,16 @@ procedure TfrmMain.tbBeerstylesClick(Sender: TObject);
 
  procedure TfrmMain.tbChartClick(Sender: TObject);
  begin
-
-    //FrmAnalysis:= TFrmAnalysis.Create(self);
-    //FrmAnalysis.Execute;
-
+    FrmAnalysis:= TFrmAnalysis.Create(self);
+    FrmAnalysis.Execute;
+    FreeAndNIL(FrmAnalysis);
  end;
 
  procedure TfrmMain.tbHistogramClick(Sender: TObject);
  begin
-
-    //FrmHistogram:= TFrmHistogram.Create(self);
-    //FrmHistogram.Execute;
-
+    FrmHistogram:= TFrmHistogram.Create(self);
+    FrmHistogram.Execute;
+    FreeAndNIL(FrmHistogram);
  end;
 
  procedure TfrmMain.tbTrainNNClick(Sender: TObject);
