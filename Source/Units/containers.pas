@@ -3364,13 +3364,11 @@ Initialization
       BHFolder:= GetUserDir + '.brewbuddy/';
   //    DataFolder:= GetUserDir + '.brewbuddy/';
    { end;}
-    IconFolder:= BHFolder + 'icons/';
     Slash:= '/';
   {$endif}
   {$ifdef darwin}
     BHFolder:= GetUserDir + '.brewbuddy/';
 //    DataFolder:= GetUserDir + '.brewbuddy/';
-  IconFolder:= BHFolder + 'icons/';
     Slash:= '/';
   {$endif}
   {$ifdef windows}
@@ -3391,7 +3389,6 @@ Initialization
         BHFolder:= BHFolder + 'brewbuddy\';
     end;
     log('BHFolder = ' + BHFolder);
-    IconFolder:= BHFolder + 'icons\';
     Slash:= '\';
   {$endif}
 

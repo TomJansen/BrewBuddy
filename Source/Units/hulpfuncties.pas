@@ -190,7 +190,6 @@ var
   OnUSB : boolean;
   ExecFolder : string;
   BHFolder : string;
-  IconFolder : string;
   Slash : string;
   EndChar : TEndChar;
   FermentableColor, HopColor, MiscColor, WaterAgentColor, WaterColor, YeastColor,
