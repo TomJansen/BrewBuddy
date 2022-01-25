@@ -165,7 +165,6 @@ const
   numsources = 4;
   startprog = 0;
   warning = 1;
-  alarm = 2;
   endprog = 3;
   {$endif}
 
@@ -191,7 +190,6 @@ var
   OnUSB : boolean;
   ExecFolder : string;
   BHFolder : string;
-  SoundFolder : string;
   IconFolder : string;
   Slash : string;
   EndChar : TEndChar;
@@ -217,8 +215,6 @@ var
 //  loop: TALInt;  //TALInt;
 //  dat: TALVoid;  //TALVoid;
 //  {$endif}
-
-  AlarmSound : string;
 
   slLog : TStringList;
 
@@ -333,8 +329,6 @@ Function CarbCO2toS(CO2 : double; T : double; SFactor : double) : double;
 Function CarbCO2toPressure(CO2 : double; T : double) : double;
 Function CarbPressuretoCO2(P : double; T : double) : double;
 Function ActualIBU(origibu, HSI, Temp : double; Elapsed, storagetype : longint) : double;
-
-Procedure PlayAlarm;
 
 //Procedure SetFontHeight(F : TForm; fs : integer);
 
@@ -2323,25 +2317,6 @@ begin
   end;
 end;}
 
-Procedure PlayAlarm;
-var sound : TProcess;
-begin
-//  {$ifdef linux}
-//  AlSourcePlay(source[alarm]);
-//  {$endif}
-  {$ifdef darwub}
-  sound:= TProcess.Create(NIL);
-  sound.CommandLine:= 'afplay ' + StartSound;
-  sound.Execute;
-  sound.Free;
-  {$endif}
-  {$ifdef windows}
-  Application.ProcessMessages;
-  sndPlaySound(PChar(AlarmSound), snd_Async or snd_NoDefault);//snd_Async or snd_NoDefault);
-  Application.ProcessMessages;
-  {$endif}
-end;
-
 Procedure Log(s : string);
 const fn = 'brewbuddy.log';
 var fnp : string;
@@ -2386,64 +2361,6 @@ Initialization
   FiningColor:= RGBtoColor(95, 180, 25);
   YeastColor:= RGBtoColor(175, 175, 255);
   WaterColor:= RGBtoColor(120, 255, 250);
-
-  AlarmSound:= SoundFolder + 'alarm.wav';
-
-//  {$ifdef linux}
-//  //Initialize the sound system
-//  InitOpenAL;
-//  AlutInit(nil,argv);
-//  alGenBuffers(numbuffers, buffer);
-//  alGenSources(numsources, source);
-
-//  AlutLoadWavFile(StartSound, format, dat, size, freq, loop);
-//  AlBufferData(buffer[startprog], format, dat, size, freq);
-//  AlutUnloadWav(format, dat, size, freq);
-
-//  AlutLoadWavFile(WarningSound, format, dat, size, freq, loop);
-//  AlBufferData(buffer[warning], format, dat, size, freq);
-//  AlutUnloadWav(format, dat, size, freq);
-
-//  AlutLoadWavFile(AlarmSound, format, dat, size, freq, loop);
-//  AlBufferData(buffer[alarm], format, dat, size, freq);
-//  AlutUnloadWav(format, dat, size, freq);
-
-//  AlutLoadWavFile(EndSound, format, dat, size, freq, loop);
-//  AlBufferData(buffer[endprog], format, dat, size, freq);
-//  AlutUnloadWav(format, dat, size, freq);
-
-//  AlSourcei( source[startprog], AL_BUFFER, buffer[startprog]);
-//  AlSourcef( source[startprog], AL_PITCH, 1.0 );
-//  AlSourcef( source[startprog], AL_GAIN, 1.0 );
-//  AlSourcefv( source[startprog], AL_POSITION, @sourcepos);
-//  AlSourcefv( source[startprog], AL_VELOCITY, @sourcevel);
-//  AlSourcei( source[startprog], AL_LOOPING, loop);
-
-//  AlSourcei( source[warning], AL_BUFFER, buffer[warning]);
-//  AlSourcef( source[warning], AL_PITCH, 1.0 );
-//  AlSourcef( source[warning], AL_GAIN, 1.0 );
-//  AlSourcefv( source[warning], AL_POSITION, @sourcepos);
-//  AlSourcefv( source[warning], AL_VELOCITY, @sourcevel);
-//  AlSourcei( source[warning], AL_LOOPING, loop);
-
-//  AlSourcei( source[alarm], AL_BUFFER, buffer[alarm]);
-//  AlSourcef( source[alarm], AL_PITCH, 1.0 );
-//  AlSourcef( source[alarm], AL_GAIN, 1.0 );
-//  AlSourcefv( source[alarm], AL_POSITION, @sourcepos);
-//  AlSourcefv( source[alarm], AL_VELOCITY, @sourcevel);
-//  AlSourcei( source[alarm], AL_LOOPING, loop);
-
-//  AlSourcei( source[endprog], AL_BUFFER, buffer[endprog]);
-//  AlSourcef( source[endprog], AL_PITCH, 1.0 );
-//  AlSourcef( source[endprog], AL_GAIN, 1.0 );
-//  AlSourcefv( source[endprog], AL_POSITION, @sourcepos);
-//  AlSourcefv( source[endprog], AL_VELOCITY, @sourcevel);
-//  AlSourcei( source[endprog], AL_LOOPING, loop);
-
-//  AlListenerfv( AL_POSITION, @listenerpos);
-//  AlListenerfv( AL_VELOCITY, @listenervel);
-//  AlListenerfv( AL_ORIENTATION, @listenerori);
-//  {$endif}
 
 finalization
 //  {$ifdef linux}

@@ -274,8 +274,6 @@ type
     FPelletFactor: TBFloat;
     FPlugFactor: TBFloat;
     FGrainAbsorption: TBFLoat;
-    FPlaySounds: TBBoolean;
-    FShowSplash: TBBoolean;
     FFTPSite : TBString;
     FFTPDir : TBString;
     FFTPUser : TBString;
@@ -312,8 +310,6 @@ type
     property PelletFactor: TBFloat read FPelletFactor;  //10%
     property PlugFactor: TBFloat read FPlugFactor;      //2%
     property GrainAbsorption: TBFloat read FGrainAbsorption; //1.01
-    property PlaySounds: TBBoolean read FPlaySounds;
-    property ShowSplash: TBBoolean read FShowSplash;
     property FTPSite : TBString read FFTPSite;
     property FTPDir : TBString read FFTPDir;
     property FTPUser : TBString read FFTPUser;
@@ -16679,14 +16675,6 @@ begin
   FGrainAbsorption.NodeLabel := 'GRAIN_ABSORPTION';
   FGrainAbsorption.DisplayLabel := '';
 
-  FPlaySounds := TBBoolean.Create(NIL);
-  FPlaySounds.Value := True;
-  FPlaySounds.NodeLabel := 'PLAY_SOUNDS';
-
-  FShowSplash := TBBoolean.Create(NIL);
-  FShowSplash.Value := True;
-  FShowSplash.NodeLabel := 'SHOW_SPLASH';
-
   FFTPSite := TBString.Create(NIL);
   FFTPSite.Value := '';
   FFTPSite.NodeLabel := 'FTP_SITE';
@@ -16794,8 +16782,6 @@ begin
   FPelletFactor.Free;
   FPlugFactor.Free;
   FGrainAbsorption.Free;
-  FPlaySounds.Free;
-  FShowSplash.Free;
   FFTPDir.Free;
   FFTPUser.Free;
   FFTPPasswd.Free;
@@ -16838,8 +16824,6 @@ begin
     FPelletFactor.SaveXML(iDoc, iRootNode, false);
     FPlugFactor.SaveXML(iDoc, iRootNode, false);
     FGrainAbsorption.SaveXML(iDoc, iRootNode, false);
-    FPlaySounds.SaveXML(iDoc, iRootNode, false);
-    FShowSplash.SaveXML(iDoc, iRootNode, false);
     FFTPSite.SaveXML(iDoc, iRootNode, false);
     FFTPDir.SaveXML(iDoc, iRootNode, false);
     FFTPUser.SaveXML(iDoc, iRootNode, false);
@@ -16900,8 +16884,6 @@ begin
         FPelletFactor.ReadXML(iRootNode);
         FPlugFactor.ReadXML(iRootNode);
         FGrainAbsorption.ReadXML(iRootNode);
-        FPlaySounds.ReadXML(iRootNode);
-        FShowSplash.ReadXML(iRootNode);
         FFTPSite.ReadXML(iRootNode);
         FFTPDir.ReadXML(iRootNode);
         FFTPUser.ReadXML(iRootNode);

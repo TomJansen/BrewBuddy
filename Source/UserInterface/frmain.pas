@@ -7211,9 +7211,6 @@ end;
    end;
    if FMashTimeLeft <= 0.5 * tMashTimer.Interval / 86400000 then
    begin
-     //Set off alarm and notification
-     tMashTimer.Enabled:= false;
-     PlayAlarm;
      FMashTimeLeft:= 0;
      eMashTimer.Color:= clWhite;
      ShowNotification(self, FTimerMashStep.Name.Value + readymash1);
@@ -7317,23 +7314,18 @@ end;
      begin
        FBoilIngredients[i].Warning1Shown:= TRUE;
        ShowNotification(self, boiltimeto1 + FBoilIngredients[i].Ingredient.Amount.DisplayString + ' ' + FBoilIngredients[i].Ingredient.Name.Value + boiltimeto2);
-       PlayAlarm;
      end;
      if (FBoilTimeLeft <= FBoilIngredients[i].Time2) and (not FBoilIngredients[i].Warning2Shown) then
      begin
        FBoilIngredients[i].Warning2Shown:= TRUE;
        ShowNotification(self, boiltimeto1 + FBoilIngredients[i].Ingredient.Amount.DisplayString + ' ' + FBoilIngredients[i].Ingredient.Name.Value + boiltimeto3);
-       PlayAlarm;
      end;
    end;
 
    if FBoilTimeLeft <= (0.5 * tBoilTimer.Interval/86400000) then
    begin
-     //Set off alarm and notification
-     tBoilTimer.Enabled:= false;
      FBoilTimeLeft:= 0;
 
-     PlayAlarm;
      ShowNotification(self, endboil2);
      bbStartBoil.Caption:= startboil2;
      eBoilTimer.Color:= clWhite;

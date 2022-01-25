@@ -3065,7 +3065,7 @@ Procedure CheckDataFolder;
     else if (not destOK) and (not sourceOK) then
       ShowMessage('Fout: ' + sd + fn + ' niet gevonden.');
   end;
-var sourcedata, destdata, sourcesounds, destsounds : string;
+var sourcedata, destdata : string;
 begin
   {$ifdef UNIX}
     sourcedata:= '/usr/share/brewbuddy/';
@@ -3081,10 +3081,6 @@ begin
   destdata:= BHFolder;
   if not DirectoryExists(BHFolder) then
     CreateDir(BHFolder);
-  if not DirectoryExists(SoundFolder) then
-    CreateDir(SoundFolder);
-  sourcesounds:= sourcedata + 'sounds' + Slash;
-  destsounds:= SoundFolder;
   Settings := TBSettings.Create;
   if CheckFile(sourcedata, destdata, 'settings.xml') then
   begin
@@ -3129,7 +3125,6 @@ begin
   {$ifdef Unix}
   CheckFile('/usr/share/doc/brewbuddy/', destdata, 'Introductie BrewBuddy Sassy Saison.pdf');
   {$endif}
-  CheckFile(sourcesounds, destsounds, 'alarm.wav');
 end;
 
 Procedure Reload;
@@ -3369,14 +3364,12 @@ Initialization
       BHFolder:= GetUserDir + '.brewbuddy/';
   //    DataFolder:= GetUserDir + '.brewbuddy/';
    { end;}
-    SoundFolder:= BHFolder + 'sounds/';
     IconFolder:= BHFolder + 'icons/';
     Slash:= '/';
   {$endif}
   {$ifdef darwin}
     BHFolder:= GetUserDir + '.brewbuddy/';
 //    DataFolder:= GetUserDir + '.brewbuddy/';
-    SoundFolder:= BHFolder + 'sounds/';
   IconFolder:= BHFolder + 'icons/';
     Slash:= '/';
   {$endif}
@@ -3398,7 +3391,6 @@ Initialization
         BHFolder:= BHFolder + 'brewbuddy\';
     end;
     log('BHFolder = ' + BHFolder);
-    SoundFolder:= BHFolder + 'sounds\';
     IconFolder:= BHFolder + 'icons\';
     Slash:= '\';
   {$endif}
