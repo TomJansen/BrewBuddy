@@ -2405,7 +2405,7 @@ object frmMain: TfrmMain
               FF00FFFFFF00FFFFFF00FFFFFF00069EC554069DC35100AAAA03FFFFFF00FFFF
               FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
             }
-            Margin = 5
+            Margin = -1
             OnClick = bbAddGrainClick
             ParentShowHint = False
             ShowHint = True
@@ -2446,7 +2446,7 @@ object frmMain: TfrmMain
               FF0000BF80040FD87B3413CE7AB11CAE6D8A00FF800212D27B6611D37CA415D5
               800C1CAA693F14C978C000CC9905FFFFFF00FFFFFF00FFFFFF00
             }
-            Margin = 5
+            Margin = -1
             OnClick = bbAddHopClick
             ParentShowHint = False
             ShowHint = True
@@ -2506,7 +2506,7 @@ object frmMain: TfrmMain
               78C7198878C12B988C2AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
               FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
             }
-            Margin = 5
+            Margin = -1
             OnClick = bbAddMiscClick
             ParentShowHint = False
             ShowHint = True
@@ -2547,7 +2547,7 @@ object frmMain: TfrmMain
               FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0079623B5F8F59
               059C855100794027004FFFFFFF00FFFFFF00FFFFFF00FFFFFF00
             }
-            Margin = 5
+            Margin = -1
             OnClick = bbAddYeastClick
             ParentShowHint = False
             ShowHint = True
@@ -2599,7 +2599,7 @@ object frmMain: TfrmMain
               0000000000000000000000000000000000000000000000000000000000000000
               0000000000000000000000000000000000000000000000000000
             }
-            Margin = 5
+            Margin = -1
             OnClick = bbRemoveClick
             ParentShowHint = False
             ShowHint = True
