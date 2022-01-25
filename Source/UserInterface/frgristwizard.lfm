@@ -527,7 +527,6 @@ object FrmGristWizard: TFrmGristWizard
         FF00FFFFFF00FFFFFF00FFFFFF00069EC554069DC35100AAAA03FFFFFF00FFFF
         FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
       }
-      Margin = 5
       OnClick = bbAddFermentableClick
       ParentShowHint = False
       ShowHint = True
@@ -578,7 +577,6 @@ object FrmGristWizard: TFrmGristWizard
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000
       }
-      Margin = 5
       OnClick = bbRemoveBaseMaltClick
       ParentShowHint = False
       ShowHint = True

@@ -610,7 +610,6 @@ object FrmHopWizard: TFrmHopWizard
         FF0000BF80040FD87B3413CE7AB11CAE6D8A00FF800212D27B6611D37CA415D5
         800C1CAA693F14C978C000CC9905FFFFFF00FFFFFF00FFFFFF00
       }
-      Margin = 5
       OnClick = bbAddHopClick
       ParentShowHint = False
       ShowHint = True
@@ -661,7 +660,6 @@ object FrmHopWizard: TFrmHopWizard
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000
       }
-      Margin = 5
       OnClick = bbRemoveHopClick
       ParentShowHint = False
       ShowHint = True
