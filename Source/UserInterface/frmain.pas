@@ -6,11 +6,11 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, TAGraph, TAMultiSeries, TASeries, TATools,
-  TAIntervalSources, TASources, TATransformations, {PrintersDlgs, }SpinEx, Forms,
-  Controls, Graphics, Dialogs, Menus, ComCtrls, ExtCtrls, ActnList, StdCtrls,
-  StrUtils, Buttons, Grids, Spin, ExtDlgs, EditBtn, Printers, Data,
-  HulpFuncties, ExpandPanels, UniqueInstance,
-  containers, rcstrngs, LCLIntF,
+  TAIntervalSources, TASources, TATransformations, SpinEx, DateTimePicker,
+  Forms, Controls, Graphics, Dialogs, Menus, ComCtrls, ExtCtrls, ActnList,
+  StdCtrls, StrUtils, Buttons, Grids, Spin, ExtDlgs, EditBtn, Printers, Data,
+  HulpFuncties, ExpandPanels, UniqueInstance, containers, rcstrngs, LCLIntF,
+  FileCtrl,
   {laz2_XMLRead, laz2_XMLwrite, }
   DOM, XMLWrite, {XMLRead, }PositieInterval
   , Types;{, PrintersDlgs, TAGraph, TASeries,
@@ -95,6 +95,7 @@ type
     fseVolumeAfter: TFloatSpinEdit;
     fseWater: TFloatSpinEdit;
     gbIngredients: TGroupBox;
+    GroupBox1: TGroupBox;
     hcIngredients: THeaderControl;
     Label10: TLabel;
     Label11: TLabel;
@@ -174,12 +175,8 @@ type
     miRecipesCopyToClipboardForum1: TMenuItem;
     miCloudDelete: TMenuItem;
     miCloudToBrews: TMenuItem;
-    mroExtra: TMyRollOut;
-    mroHydrometerCorrection: TMyRollOut;
-    mroPredictions: TMyRollOut;
-    mroSG: TMyRollOut;
-    mroWaterSugar: TMyRollOut;
     opdLogo: TOpenPictureDialog;
+    pcRight: TPageControl;
     pCloudButtons: TPanel;
     pbProgress: TProgressBar;
     pmCloud: TPopupMenu;
@@ -202,6 +199,13 @@ type
     sddBackup: TSelectDirectoryDialog;
     sbSearchBrewsDelete: TSpeedButton;
     sgIngredients: TStringGrid;
+    rxteStartTime: TTimeEdit;
+    rxteEndTime: TTimeEdit;
+    tsExtra: TTabSheet;
+    tsPredictions: TTabSheet;
+    tsHydrometerCorrection: TTabSheet;
+    tsWaterSugar: TTabSheet;
+    tsSG: TTabSheet;
     tbFermChart: TToolButton;
     tbHistogram: TToolButton;
     tbHopChart: TToolButton;
@@ -234,7 +238,6 @@ type
     tbFile: TToolBar;
     tbImport: TToolButton;
     tbExport: TToolButton;
-    tbSep2: TToolButton;
     ToolButton2: TToolButton;
     tbSave: TToolButton;
     tbPrintPreview: TToolButton;
@@ -256,8 +259,6 @@ type
     piABV2 : TPosInterval;
     piCarbBottles : TPosInterval;
     piCarbKegs : TPosInterval;
-    rxteStartTime : TTimeEdit;
-    rxteEndTime : TTimeEdit;
     tbCopyClipboard: TToolButton;
     tbCopyHTML: TToolButton;
     pmBrews: TPopupMenu;
@@ -1052,12 +1053,6 @@ begin
   FSortGrid:= TRUE;
   Screen.Cursor:= crHourglass;
 
-  epRight.AddPanel(mroSG);
-  epRight.AddPanel(mroWaterSugar);
-  epRight.AddPanel(mroHydrometerCorrection);
-  epRight.AddPanel(mroPredictions);
-  epRight.AddPanel(mroExtra);
-
   sbSearchBrewsDelete.Top:= eSearchBrews.Top;
   sbSearchBrewsDelete.Height:= eSearchBrews.Height + 2;
   sbSearchBrewsDelete.Width:= sbSearchBrewsDelete.Height;
@@ -1082,26 +1077,6 @@ begin
 
   fseOG.ReadOnly:= TRUE;
   fseOG.Color:= clBackground;
-
-  rxteStartTime := TTimeEdit.Create(self);
-  rxteStartTime.Parent:= tsBrewday;
-  rxteStartTime.Top:= 13;
-  rxteStartTime.Left:= 288;
-  rxteStartTime.Width:= 80;
-  rxteStartTime.Height:= 23;
-  rxteStartTime.Font.Height:= Font.Height;
-  rxteStartTime.Time:= 0;
-  rxteStartTime.OnChange:= @rxteStartTimeChange;
-
-  rxteEndTime := TTimeEdit.Create(self);
-  rxteEndTime.Parent:= tsBrewday;
-  rxteEndTime.Top:= 13;
-  rxteEndTime.Left:= 474;
-  rxteEndTime.Width:= 80;
-  rxteEndTime.Height:= 23;
-  rxteEndTime.Font.Height:= Font.Height;
-  rxteEndTime.Time:= 0;
-  rxteEndTime.OnChange:= @rxteEndTimeChange;
 
   FWarningColor:= clRed;
   piGravity:= TPosInterval.Create(gbVisual);
@@ -2416,10 +2391,10 @@ end;
    if (FTemporary <> NIL) and (FSelBrew <> NIL) and (pcRecipes.ActivePage = tsBrews) then
    begin
      //BHNNs.GetPrediction(FTemporary, mPredictions);
-     mroPredictions.Visible:= (mPredictions.Lines.Count > 0);
+     mPredictions.Visible:= (mPredictions.Lines.Count > 0);
    end
    else
-     mroPredictions.Visible:= false;
+     mPredictions.Visible:= false;
  end;
 
  procedure TfrmMain.Store;
@@ -4295,7 +4270,7 @@ end;
      tbCheckList.Enabled:= (pcRecipes.ActivePage = tsBrews) and (not FSelected.Locked.Value)
    else tbCheckList.Enabled:= false;
    cbMash.ItemIndex:= -1;
-   mroPredictions.Visible:= (pcRecipes.ActivePage = tsBrews);
+   mPredictions.Visible:= (pcRecipes.ActivePage = tsBrews);
 
    if FSelected <> NIL then
    begin

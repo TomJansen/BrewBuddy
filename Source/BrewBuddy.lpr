@@ -8,7 +8,7 @@ uses
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, tachartlazaruspkg,
-  printer4lazarus, FrMain, FrFermentables, Containers, Data,
+  printer4lazarus, datetimectrls, FrMain, FrFermentables, Containers, Data,
   Hulpfuncties, rcstrngs, pexpandpanels, uniqueinstance_package;
 
 {$R *.res}
