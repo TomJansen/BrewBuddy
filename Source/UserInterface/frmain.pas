@@ -9,7 +9,7 @@ uses
   TAIntervalSources, TASources, TATransformations, SpinEx, DateTimePicker,
   Forms, Controls, Graphics, Dialogs, Menus, ComCtrls, ExtCtrls, ActnList,
   StdCtrls, StrUtils, Buttons, Grids, Spin, ExtDlgs, EditBtn, Printers, Data,
-  HulpFuncties, ExpandPanels, UniqueInstance, containers, rcstrngs, LCLIntF,
+  HulpFuncties, UniqueInstance, containers, rcstrngs, LCLIntF,
   FileCtrl,
   {laz2_XMLRead, laz2_XMLwrite, }
   DOM, XMLWrite, {XMLRead, }PositieInterval
@@ -67,7 +67,6 @@ type
     eCosts: TEdit;
     eEfficiencyMash: TEdit;
     eFGest: TEdit;
-    epRight: TExpandPanels;
     eSearchBrews: TEdit;
     eSearchRecipes: TEdit;
     eSGCorr: TEdit;

@@ -9,7 +9,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, tachartlazaruspkg,
   printer4lazarus, datetimectrls, FrMain, FrFermentables, Containers, Data,
-  Hulpfuncties, rcstrngs, pexpandpanels, uniqueinstance_package;
+  Hulpfuncties, rcstrngs, uniqueinstance_package;
 
 {$R *.res}
 
