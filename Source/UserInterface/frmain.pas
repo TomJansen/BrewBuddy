@@ -1176,7 +1176,6 @@ begin
   piCarbBottles:= TPosInterval.Create(gbBottles);
   piCarbBottles.Parent:= gbBottles;
   piCarbBottles.Left:= 2;
-  //piCarbBottles.Top:= 200;
   piCarbBottles.Top:= 230;
   piCarbBottles.Width:= 290;
   piCarbBottles.Height:= 40;
@@ -1193,14 +1192,7 @@ begin
   piCarbKegs:= TPosInterval.Create(gbKegs);
   piCarbKegs.Parent:= gbKegs;
   piCarbKegs.Left:= 2;
-  //piCarbKegs.Top:= 250;
   piCarbKegs.Top:= 300;
-  {$ifdef Linux}
-  piCarbKegs.Top:= 250;
-  {$endif}
-  {$ifdef darwin}
-  piCarbKegs.Top:= 250;
-  {$endif}
   piCarbKegs.Width:= 290;
   piCarbKegs.Height:= 40;
   piCarbKegs.Font.Height:= Font.Height;
@@ -2321,7 +2313,7 @@ end;
      SetReadOnly(fsePressureKegs, not cbForcedCarbonation.Checked);
      fseCarbonationTempKegs.Value:= FTemporary.CarbonationTempKegs.DisplayValue;
      eABVKegs.Text:= RealToStrDec(FTemporary.ABVcalc.Value + x, 1) + ' vol.%';
-     {piCarbBottles.Low:= FTemporary.Style.CarbMin.Value;
+     piCarbBottles.Low:= FTemporary.Style.CarbMin.Value;
      piCarbBottles.Min:= 0;
      piCarbBottles.High:= FTemporary.Style.CarbMax.Value;
      piCarbBottles.Max:= 1.1 * piCarbBottles.High;
@@ -2331,7 +2323,7 @@ end;
      piCarbKegs.Min:= 0;
      piCarbKegs.High:= FTemporary.Style.CarbMax.Value;
      piCarbKegs.Max:= 1.1 * piCarbKegs.High;
-     piCarbKegs.Value:= FTemporary.CarbonationKegs.Value;}
+     piCarbKegs.Value:= FTemporary.CarbonationKegs.Value;
 
      cbPrimingSugarBottles.ItemIndex:= cbPrimingSugarBottles.Items.IndexOf(FTemporary.PrimingSugarBottlesDisplayName);
      cbPrimingSugarKegs.ItemIndex:= cbPrimingSugarKegs.Items.IndexOf(FTemporary.PrimingSugarKegsDisplayName);
@@ -8323,7 +8315,7 @@ end;
      if Tsec < 5 then TSec:= 15;
      FTemporary.Carbonation.Value:= CarbStoCO2(FTemporary.AmountPrimingBottles.Value,
                                                Tsec, PrimingSugarFactors[FTemporary.PrimingSugarBottles]);
- //    piCarbBottles.Value:= FTemporary.Carbonation.Value;
+     piCarbBottles.Value:= FTemporary.Carbonation.Value;
      fseCarbonation.Value:= FTemporary.Carbonation.DisplayValue;
      eABVBottles.Text:= RealToStrDec(FTemporary.ABVcalc.Value +
                                      FTemporary.AmountPrimingBottles.Value * 0.47 / 7.907,
@@ -8373,7 +8365,7 @@ end;
    begin
      FUserClicked:= false;
      FTemporary.CarbonationKegs.DisplayValue:= fseCarbonationKegs.Value;
- //    piCarbKegs.Value:= FTemporary.CarbonationKegs.Value;
+     piCarbKegs.Value:= FTemporary.CarbonationKegs.Value;
      eTotAmKegs.Text:= RealToStrDec(FTemporary.VolumeKegs.Value *  FTemporary.AmountPrimingKegs.Value, 1);
      Tsec:= FTemporary.SecondaryTemp.Value;
      if Tsec < 5 then Tsec:= FTemporary.EndTempPrimary.Value;
@@ -8443,7 +8435,7 @@ end;
      if Tsec < 5 then TSec:= 15;
      FTemporary.CarbonationKegs.Value:= CarbStoCO2(FTemporary.AmountPrimingKegs.Value,
                                                    Tsec, PrimingSugarFactors[FTemporary.PrimingSugarKegs]);
- //    piCarbKegs.Value:= FTemporary.CarbonationKegs.Value;
+     piCarbKegs.Value:= FTemporary.CarbonationKegs.Value;
      fseCarbonationKegs.Value:= FTemporary.CarbonationKegs.DisplayValue;
 
      Carb:= FTemporary.CarbonationKegs.Value;
@@ -8493,7 +8485,7 @@ end;
      c:= CarbPressureToCO2(Carb, T);
      FTemporary.CarbonationKegs.Value:= c;
      fseCarbonationKegs.Value:= FTemporary.CarbonationKegs.DisplayValue;
- //    piCarbKegs.Value:= FTemporary.CarbonationKegs.Value;
+     piCarbKegs.Value:= FTemporary.CarbonationKegs.Value;
 
      UpdatePredictions;
      FChanged:= TRUE;
