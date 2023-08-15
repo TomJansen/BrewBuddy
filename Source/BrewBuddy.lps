@@ -8,7 +8,7 @@
       <Unit0>
         <Filename Value="BrewBuddy.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="11"/>
         <CursorPos X="40" Y="9"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
@@ -21,9 +21,10 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FrMain"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="25" Y="10"/>
+        <CursorPos X="73" Y="11"/>
         <UsageCount Value="38"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="UserInterface\frfermentables.lfm"/>
@@ -55,7 +56,7 @@
         <Filename Value="Units\hulpfuncties.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Hulpfuncties"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="178"/>
         <CursorPos X="24" Y="194"/>
         <UsageCount Value="190"/>
@@ -65,7 +66,7 @@
         <Filename Value="Units\containers.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Containers"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="3063"/>
         <CursorPos X="37" Y="3084"/>
         <UsageCount Value="190"/>
@@ -75,7 +76,7 @@
         <Filename Value="Units\data.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Data"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="1722"/>
         <CursorPos X="36" Y="1741"/>
         <UsageCount Value="239"/>
@@ -96,7 +97,7 @@
       <Unit10>
         <Filename Value="Units\rcstrngs.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="49"/>
         <CursorPos X="79" Y="62"/>
         <UsageCount Value="185"/>
@@ -106,7 +107,7 @@
         <Filename Value="Units\bh_report.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="BH_report"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="1695"/>
         <CursorPos X="9" Y="1714"/>
         <UsageCount Value="110"/>
@@ -125,7 +126,7 @@
         <Filename Value="Units\bhprintforms.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="BHprintforms"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="3031"/>
         <CursorPos X="30" Y="3050"/>
         <UsageCount Value="110"/>
@@ -135,16 +136,16 @@
         <Filename Value="Units\positieinterval.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="PositieInterval"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="398"/>
+        <CursorPos X="90" Y="434"/>
         <UsageCount Value="110"/>
+        <Loaded Value="True"/>
       </Unit14>
       <Unit15>
         <Filename Value="Units\subs.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="10"/>
         <TopLine Value="403"/>
         <CursorPos X="8" Y="406"/>
         <UsageCount Value="110"/>
@@ -153,7 +154,7 @@
       <Unit16>
         <Filename Value="Units\vinfo.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="12"/>
         <UsageCount Value="110"/>
         <Loaded Value="True"/>
       </Unit16>
@@ -421,7 +422,7 @@
       <Unit59>
         <Filename Value="UserInterface\frmain.lfm"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="11025"/>
         <CursorPos X="39" Y="11040"/>
         <UsageCount Value="38"/>
@@ -608,7 +609,11 @@
         <Filename Value="UserInterface\frwateradjustment.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1877"/>
+        <CursorPos X="10" Y="1892"/>
         <UsageCount Value="38"/>
+        <Loaded Value="True"/>
       </Unit89>
       <Unit90>
         <Filename Value="UserInterface\frwaters.lfm"/>
@@ -1586,30 +1591,30 @@
         <UsageCount Value="10"/>
       </Unit202>
     </Units>
-    <JumpHistory Count="28" HistoryIndex="27">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="738" Column="24" TopLine="713"/>
+        <Caret Line="726" Column="14" TopLine="712"/>
       </Position1>
       <Position2>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="737" Column="24" TopLine="712"/>
+        <Caret Line="727" Column="14" TopLine="713"/>
       </Position2>
       <Position3>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="726" Column="14" TopLine="712"/>
+        <Caret Line="722" Column="13" TopLine="714"/>
       </Position3>
       <Position4>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="727" Column="14" TopLine="713"/>
+        <Caret Line="265" Column="22" TopLine="248"/>
       </Position4>
       <Position5>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="722" Column="13" TopLine="714"/>
+        <Caret Line="261" Column="5" TopLine="247"/>
       </Position5>
       <Position6>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="265" Column="22" TopLine="248"/>
+        <Caret Line="262" Column="5" TopLine="248"/>
       </Position6>
       <Position7>
         <Filename Value="UserInterface\frmain.pas"/>
@@ -1617,35 +1622,35 @@
       </Position7>
       <Position8>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="262" Column="5" TopLine="248"/>
+        <Caret Line="255" Column="47" TopLine="248"/>
       </Position8>
       <Position9>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="261" Column="5" TopLine="247"/>
+        <Caret Line="7531" Column="25" TopLine="7516"/>
       </Position9>
       <Position10>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="255" Column="47" TopLine="248"/>
+        <Caret Line="1490" Column="53" TopLine="1469"/>
       </Position10>
       <Position11>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="7531" Column="25" TopLine="7516"/>
+        <Caret Line="7545" Column="5" TopLine="7522"/>
       </Position11>
       <Position12>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="1490" Column="53" TopLine="1469"/>
+        <Caret Line="7067" Column="24" TopLine="7039"/>
       </Position12>
       <Position13>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="7545" Column="5" TopLine="7522"/>
+        <Caret Line="773" Column="87" TopLine="754"/>
       </Position13>
       <Position14>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="7067" Column="24" TopLine="7039"/>
+        <Caret Line="775" Column="18" TopLine="754"/>
       </Position14>
       <Position15>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="773" Column="87" TopLine="754"/>
+        <Caret Line="776" Column="18" TopLine="755"/>
       </Position15>
       <Position16>
         <Filename Value="UserInterface\frmain.pas"/>
@@ -1653,52 +1658,60 @@
       </Position16>
       <Position17>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="776" Column="18" TopLine="755"/>
+        <Caret Line="774" Column="54"/>
       </Position17>
       <Position18>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="775" Column="18" TopLine="754"/>
+        <Caret Line="1038" Column="8" TopLine="1024"/>
       </Position18>
       <Position19>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="774" Column="54"/>
+        <Caret Line="779" Column="42" TopLine="766"/>
       </Position19>
       <Position20>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="1038" Column="8" TopLine="1024"/>
+        <Caret Line="4297" Column="6" TopLine="4283"/>
       </Position20>
       <Position21>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="779" Column="42" TopLine="766"/>
+        <Caret Line="13" Column="35"/>
       </Position21>
       <Position22>
         <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="4297" Column="6" TopLine="4283"/>
+        <Caret Line="71" Column="65" TopLine="56"/>
       </Position22>
       <Position23>
-        <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="13" Column="35"/>
+        <Filename Value="UserInterface\frmain.lfm"/>
+        <Caret Line="11039" Column="17" TopLine="11031"/>
       </Position23>
       <Position24>
-        <Filename Value="UserInterface\frmain.pas"/>
-        <Caret Line="71" Column="65" TopLine="56"/>
+        <Filename Value="UserInterface\frmain.lfm"/>
+        <Caret Line="11033" Column="8" TopLine="11031"/>
       </Position24>
       <Position25>
         <Filename Value="UserInterface\frmain.lfm"/>
-        <Caret Line="11039" Column="17" TopLine="11031"/>
+        <Caret Line="50" Column="21" TopLine="36"/>
       </Position25>
       <Position26>
         <Filename Value="UserInterface\frmain.lfm"/>
-        <Caret Line="11033" Column="8" TopLine="11031"/>
+        <Caret Line="49" Column="32" TopLine="36"/>
       </Position26>
       <Position27>
-        <Filename Value="UserInterface\frmain.lfm"/>
-        <Caret Line="50" Column="21" TopLine="36"/>
+        <Filename Value="UserInterface\frmain.pas"/>
+        <Caret Line="10" Column="25"/>
       </Position27>
       <Position28>
-        <Filename Value="UserInterface\frmain.lfm"/>
-        <Caret Line="49" Column="32" TopLine="36"/>
+        <Filename Value="UserInterface\frwateradjustment.pas"/>
+        <Caret Line="1892" Column="10" TopLine="1877"/>
       </Position28>
+      <Position29>
+        <Filename Value="Units\positieinterval.pas"/>
+        <Caret Line="193" Column="19" TopLine="178"/>
+      </Position29>
+      <Position30>
+        <Filename Value="Units\positieinterval.pas"/>
+        <Caret Line="434" Column="80" TopLine="419"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
