@@ -96,10 +96,10 @@ type
     gbIngredients: TGroupBox;
     GroupBox1: TGroupBox;
     hcIngredients: THeaderControl;
-    Label10: TLabel;
-    Label11: TLabel;
+    lEfficiency: TLabel;
+    lCosts: TLabel;
     Label119: TLabel;
-    Label12: TLabel;
+    lIBU: TLabel;
     Label120: TLabel;
     Label121: TLabel;
     Label123: TLabel;
@@ -109,7 +109,7 @@ type
     Label127: TLabel;
     Label128: TLabel;
     Label129: TLabel;
-    Label13: TLabel;
+    lColor: TLabel;
     Label130: TLabel;
     Label131: TLabel;
     Label132: TLabel;
@@ -124,23 +124,23 @@ type
     Label141: TLabel;
     Label142: TLabel;
     Label143: TLabel;
-    Label150: TLabel;
-    Label16: TLabel;
-    Label17: TLabel;
-    Label18: TLabel;
+    lABVest: TLabel;
+    lAdd: TLabel;
+    lBUGU: TLabel;
+    lFGest: TLabel;
     Label30: TLabel;
     Label59: TLabel;
-    Label62: TLabel;
+    lBoilTime: TLabel;
     Label63: TLabel;
-    Label9: TLabel;
+    lBeginSG: TLabel;
     lABV: TLabel;
     lAfterBoil1: TLabel;
     lAfterBoil2: TLabel;
-    lBoilTime: TLabel;
-    lBUGU: TLabel;
-    lEfficiency: TLabel;
+    lBoilTimeUnit: TLabel;
+    lBUGUUnit: TLabel;
+    lEfficiencyPercent: TLabel;
     lEstOG: TLabel;
-    lIBU: TLabel;
+    lIBUUnit: TLabel;
     lLastRunningSG: TLabel;
     Label140: TLabel;
     lSGendmash: TLabel;
@@ -1740,8 +1740,8 @@ end;
      FUserClicked:= false;
      SetControl(fseOG, lEstOG, FTemporary.EstOG, TRUE);
      SetControl(fseBatchSize, lBatchSize, FTemporary.BatchSize, TRUE);
-     SetControl(fseIBU, lIBU, FTemporary.IBUcalc, TRUE);
-     SetControl(fseBoilTime, lBoilTime, FTemporary.BoilTime, TRUE);
+     SetControl(fseIBU, lIBUUnit, FTemporary.IBUcalc, TRUE);
+     SetControl(fseBoilTime, lBoilTimeUnit, FTemporary.BoilTime, TRUE);
 
      //Maischen en water
      SetControl(fseInfuseAmount, lInfuseAmount, FTemporary.BatchSize, false);
@@ -1989,11 +1989,11 @@ end;
      fseIBU.value:= x;
      FUserClicked:= TRUE;
      eBUGU.Text:= RealToStrDec(FTemporary.BUGU, 2);
-     if FTemporary.BUGU < 0.32 then lBUGU.Caption:= ibugu5
-     else if FTemporary.BUGU < 0.43 then lBUGU.Caption:= ibugu4
-     else if FTemporary.BUGU < 0.52 then lBUGU.Caption:= ibugu3
-     else if FTemporary.BUGU < 0.63 then lBUGU.Caption:= ibugu2
-     else lBUGU.Caption:= ibugu1;
+     if FTemporary.BUGU < 0.32 then lBUGUUnit.Caption:= ibugu5
+     else if FTemporary.BUGU < 0.43 then lBUGUUnit.Caption:= ibugu4
+     else if FTemporary.BUGU < 0.52 then lBUGUUnit.Caption:= ibugu3
+     else if FTemporary.BUGU < 0.63 then lBUGUUnit.Caption:= ibugu2
+     else lBUGUUnit.Caption:= ibugu1;
 
      FTemporary.CalcColor;
      eColor2.Text:= FTemporary.EstColor.DisplayString;
@@ -5060,11 +5060,11 @@ procedure TfrmMain.tvRecipesKeyDown(Sender: TObject; var Key: Word;
      FChanged:= TRUE;
      UpdateIngredientsGrid;
      eBUGU.Text:= RealToStrDec(FTemporary.BUGU, 2);
-     if FTemporary.BUGU < 0.32 then lBUGU.Caption:= ibugu5
-     else if FTemporary.BUGU < 0.43 then lBUGU.Caption:= ibugu4
-     else if FTemporary.BUGU < 0.52 then lBUGU.Caption:= ibugu3
-     else if FTemporary.BUGU < 0.63 then lBUGU.Caption:= ibugu2
-     else lBUGU.Caption:= ibugu1;
+     if FTemporary.BUGU < 0.32 then lBUGUUnit.Caption:= ibugu5
+     else if FTemporary.BUGU < 0.43 then lBUGUUnit.Caption:= ibugu4
+     else if FTemporary.BUGU < 0.52 then lBUGUUnit.Caption:= ibugu3
+     else if FTemporary.BUGU < 0.63 then lBUGUUnit.Caption:= ibugu2
+     else lBUGUUnit.Caption:= ibugu1;
      x:= FTemporary.IBUcalc.Value;
      piBitterness.Value:= x;
      piBUGU.Value:= FTemporary.BUGU;
@@ -9065,42 +9065,42 @@ end;
     hcIngredients.Sections[4].Text:= hcingredients5;
     cbPercentage.Caption:= cbpercentage1;
     cbPercentage.Hint:= cbpercentagehint1;
-    Label9.Caption:= og1;
+    lBeginSG.Caption:= og1;
     fseOG.Hint:= oghint1;
-    Label10.Caption:= efficiency1;
+    lEfficiency.Caption:= efficiency1;
     fseEfficiency.Hint:= efficiencyhint1;
-    Label12.Caption:= bitterness2;
+    lIBU.Caption:= bitterness2;
     fseIBU.Hint:= bitternesshint2;
-    Label13.Caption:= color2;
+    lColor.Caption:= color2;
     eColor2.Hint:= colorhint2;
     bbAddGrain.Caption:= addgrain1;
     bbAddGrain.Hint:= addgrainhint1;
     bbAddHop.Caption:= addhop1;
     bbAddHop.Hint:= addhophint1;
-    Label16.Caption:= add1;
+    lAdd.Caption:= add1;
     bbAddMisc.Caption:= addmisc1;
     bbAddMisc.Hint:= addmischint1;
     bbAddYeast.Caption:= addyeast1;
     bbAddYeast.Hint:= addyeasthint1;
     bbRemove.Caption:= remove1;
     bbRemove.Hint:= removehint1;
-    Label17.Caption:= bitterindex1;
+    lBUGU.Caption:= bitterindex1;
     eBUGU.Hint:= bitterindexhint1;
-    lBUGU.Caption:= ibugu3;
+    lBUGUUnit.Caption:= ibugu3;
  //   ibugu1 = 'Zeer bitter';
  //   ibugu2 = 'Bitter';
  //   ibugu3 = 'Evenwichtig';
  //   ibugu4 = 'Zoet';
  //   ibugu5 = 'Zeer zoet';
-    Label18.Caption:= fg1;
+    lFGest.Caption:= fg1;
     eFGest.Hint:= fghint1;
     bbInventory.Caption:= bbinventory1;
     bbInventory.Hint:= bbinventoryhint1;
-    Label62.Caption:= boiltime1;
+    lBoilTime.Caption:= boiltime1;
     fseBoilTime.Hint:= boiltimehint1;
-    Label150.Caption:= alcohol1;
+    lABVest.Caption:= alcohol1;
     eABVest.Hint:= alcoholhint1;
-    Label11.Caption:= cost1;
+    lCosts.Caption:= cost1;
     eCosts.Hint:= costhint1;
     sbGristWizard.Hint:= gristwizardhint1;
     sbHopWizard.Hint:= hopwizardhint1;

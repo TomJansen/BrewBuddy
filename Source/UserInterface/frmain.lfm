@@ -2189,7 +2189,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 9
           end
-          object Label9: TLabel
+          object lBeginSG: TLabel
             Left = 6
             Height = 22
             Top = 5
@@ -2215,7 +2215,7 @@ object frmMain: TfrmMain
             TabOrder = 1
             Value = 1
           end
-          object Label10: TLabel
+          object lEfficiency: TLabel
             Left = 407
             Height = 15
             Top = 61
@@ -2241,7 +2241,7 @@ object frmMain: TfrmMain
             TabOrder = 8
             Value = 80
           end
-          object lEfficiency: TLabel
+          object lEfficiencyPercent: TLabel
             Left = 613
             Height = 22
             Top = 61
@@ -2250,7 +2250,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label12: TLabel
+          object lIBU: TLabel
             Left = 225
             Height = 22
             Top = 5
@@ -2273,7 +2273,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 4
           end
-          object Label13: TLabel
+          object lColor: TLabel
             Left = 225
             Height = 22
             Top = 61
@@ -2282,7 +2282,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lIBU: TLabel
+          object lIBUUnit: TLabel
             Left = 393
             Height = 15
             Top = 5
@@ -2383,7 +2383,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 11
           end
-          object Label16: TLabel
+          object lAdd: TLabel
             Left = 560
             Height = 22
             Top = 96
@@ -2534,7 +2534,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 14
           end
-          object Label17: TLabel
+          object lBUGU: TLabel
             Left = 225
             Height = 22
             Top = 32
@@ -2543,7 +2543,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lBUGU: TLabel
+          object lBUGUUnit: TLabel
             Left = 394
             Height = 22
             Top = 32
@@ -2553,7 +2553,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label18: TLabel
+          object lFGest: TLabel
             Left = 6
             Height = 22
             Top = 32
@@ -2598,7 +2598,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 16
           end
-          object Label62: TLabel
+          object lBoilTime: TLabel
             Left = 484
             Height = 22
             Top = 5
@@ -2621,7 +2621,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 7
           end
-          object lBoilTime: TLabel
+          object lBoilTimeUnit: TLabel
             Left = 613
             Height = 22
             Top = 5
@@ -2632,7 +2632,7 @@ object frmMain: TfrmMain
             ParentFont = False
             ParentShowHint = False
           end
-          object Label150: TLabel
+          object lABVest: TLabel
             Left = 6
             Height = 22
             Top = 61
@@ -2718,7 +2718,7 @@ object frmMain: TfrmMain
             Caption = 'SG'
             ParentColor = False
           end
-          object Label11: TLabel
+          object lCosts: TLabel
             Left = 414
             Height = 22
             Top = 325
