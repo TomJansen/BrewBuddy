@@ -71,7 +71,7 @@ object frmMain: TfrmMain
           ClientHeight = 64
           ClientWidth = 245
           TabOrder = 1
-          object Label1: TLabel
+          object lBrewsSort: TLabel
             Left = 7
             Height = 22
             Top = 6
@@ -264,7 +264,7 @@ object frmMain: TfrmMain
           Font.Height = 13
           ParentFont = False
           TabOrder = 2
-          object Label19: TLabel
+          object lSearchBrews: TLabel
             Left = 3
             Height = 18
             Top = 11
