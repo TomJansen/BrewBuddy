@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
-  Left = 125
+  Left = 2044
   Height = 766
-  Top = 146
+  Top = 466
   Width = 1101
   BorderStyle = bsSingle
   Caption = 'BrewBuddy'
@@ -1916,12 +1916,12 @@ object frmMain: TfrmMain
       Height = 682
       Top = 1
       Width = 662
-      ActivePage = tsRecipe
+      ActivePage = tsWater
       Align = alClient
       ParentBiDiMode = False
       ParentShowHint = False
       ShowHint = True
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 0
       object tsRecipe: TTabSheet
         Hint = 'Voer ingrediënten in en bereken bitterheid, kleur en begin SG'
@@ -2898,7 +2898,7 @@ object frmMain: TfrmMain
           Top = 0
           Width = 647
           Caption = 'Maischen en waterbehandeling'
-          ClientHeight = 315
+          ClientHeight = 313
           ClientWidth = 643
           ParentShowHint = False
           TabOrder = 0
@@ -3031,7 +3031,7 @@ object frmMain: TfrmMain
             Style = csDropDownList
             TabOrder = 5
           end
-          object Label22: TLabel
+          object lMash: TLabel
             Left = 10
             Height = 22
             Top = 260
@@ -3112,7 +3112,7 @@ object frmMain: TfrmMain
             ParentFont = False
             ParentShowHint = False
           end
-          object Label23: TLabel
+          object lGrainTemp: TLabel
             Left = 6
             Height = 22
             Top = 14
@@ -3145,7 +3145,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 2
           end
-          object Label24: TLabel
+          object lTunTemp: TLabel
             Left = 361
             Height = 22
             Top = 14
@@ -3154,7 +3154,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lGrainTemp: TLabel
+          object lGrainTempUnit: TLabel
             Left = 258
             Height = 22
             Top = 14
@@ -3163,7 +3163,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lTunTemp: TLabel
+          object lTunTempUnit: TLabel
             Left = 606
             Height = 14
             Top = 14
@@ -3173,7 +3173,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label25: TLabel
+          object lInfuseAmount: TLabel
             Left = 7
             Height = 22
             Top = 42
@@ -3195,7 +3195,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 1
           end
-          object lInfuseAmount: TLabel
+          object lInfuseAmountUnit: TLabel
             Left = 258
             Height = 22
             Top = 42
@@ -3271,11 +3271,11 @@ object frmMain: TfrmMain
           Top = 357
           Width = 647
           Caption = 'Geplande watervolumes'
-          ClientHeight = 237
+          ClientHeight = 235
           ClientWidth = 643
           ParentShowHint = False
           TabOrder = 1
-          object Label26: TLabel
+          object lMashWater: TLabel
             Left = 3
             Height = 22
             Top = 7
@@ -3284,7 +3284,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lMashWater: TLabel
+          object lMashWaterUnit: TLabel
             Left = 222
             Height = 22
             Top = 7
@@ -3293,7 +3293,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label27: TLabel
+          object lSpargeWater: TLabel
             Left = 3
             Height = 22
             Top = 67
@@ -3302,7 +3302,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lSpargeWater: TLabel
+          object lSpargeWaterUnit: TLabel
             Left = 222
             Height = 22
             Top = 67
@@ -3311,7 +3311,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label28: TLabel
+          object lSpMa: TLabel
             Left = 319
             Height = 22
             Top = 19
@@ -3320,7 +3320,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label29: TLabel
+          object lGrainAbsorption: TLabel
             Left = 3
             Height = 22
             Top = 37
@@ -3329,7 +3329,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lGrainAbsorption: TLabel
+          object lGrainAbsorptionUnit: TLabel
             Left = 222
             Height = 22
             Top = 37
@@ -3338,7 +3338,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label32: TLabel
+          object lSpargeDeadSpace: TLabel
             Left = 3
             Height = 22
             Top = 99
@@ -3362,7 +3362,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 0
           end
-          object lSpargeDeadSpace: TLabel
+          object lSpargeDeadSpaceUnit: TLabel
             Left = 222
             Height = 22
             Top = 99
@@ -3371,7 +3371,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label34: TLabel
+          object lBoilSize: TLabel
             Left = 3
             Height = 22
             Top = 129
@@ -3380,7 +3380,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lBoilSize: TLabel
+          object lBoilSizeUnit: TLabel
             Left = 222
             Height = 22
             Top = 129
@@ -3389,7 +3389,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label37: TLabel
+          object lEvap: TLabel
             Left = 3
             Height = 22
             Top = 158
@@ -3398,7 +3398,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lEvap: TLabel
+          object lEvapUnit: TLabel
             Left = 222
             Height = 22
             Top = 158
@@ -3407,7 +3407,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label38: TLabel
+          object lAfterBoil: TLabel
             Left = 3
             Height = 22
             Top = 188
@@ -3416,7 +3416,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lAfterBoil: TLabel
+          object lAfterBoilUnit: TLabel
             Left = 222
             Height = 22
             Top = 188
@@ -3425,7 +3425,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label41: TLabel
+          object lChillerLoss: TLabel
             Left = 254
             Height = 22
             Top = 67
@@ -3434,7 +3434,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label42: TLabel
+          object lAfterBoil2: TLabel
             Left = 255
             Height = 22
             Top = 99
@@ -3457,7 +3457,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 2
           end
-          object lChillerLoss: TLabel
+          object lChillerLossUnit: TLabel
             Left = 571
             Height = 22
             Top = 67
@@ -3466,7 +3466,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label43: TLabel
+          object lTopUpWater: TLabel
             Left = 254
             Height = 22
             Top = 129
@@ -3488,7 +3488,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 3
           end
-          object Label44: TLabel
+          object lTopUpWater1: TLabel
             Left = 254
             Height = 22
             Top = 158
@@ -3497,7 +3497,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lTopUpWater: TLabel
+          object lTopUpWaterUnit: TLabel
             Left = 571
             Height = 22
             Top = 129
@@ -3617,7 +3617,7 @@ object frmMain: TfrmMain
             TabStop = False
             TabOrder = 11
           end
-          object Label151: TLabel
+          object lAfterBoil1: TLabel
             Left = 3
             Height = 22
             Top = 217
@@ -3723,7 +3723,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 13
           end
-          object lAfterBoil1: TLabel
+          object lAfterBoilUnit1: TLabel
             Left = 222
             Height = 22
             Top = 217
@@ -3732,7 +3732,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lAfterBoil2: TLabel
+          object lAfterBoilUnit2: TLabel
             Left = 571
             Height = 22
             Top = 99
@@ -3741,7 +3741,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lTopUpWater1: TLabel
+          object lTopUpWaterUnit1: TLabel
             Left = 571
             Height = 22
             Top = 158
@@ -5165,7 +5165,7 @@ object frmMain: TfrmMain
           Top = 0
           Width = 648
           Caption = 'Gist en starter'
-          ClientHeight = 138
+          ClientHeight = 136
           ClientWidth = 644
           ParentShowHint = False
           TabOrder = 0
@@ -5543,13 +5543,13 @@ object frmMain: TfrmMain
           Top = 178
           Width = 648
           Caption = 'Metingen'
-          ClientHeight = 436
+          ClientHeight = 434
           ClientWidth = 644
           ParentShowHint = False
           TabOrder = 1
           object pcMeasurements: TPageControl
             Left = 0
-            Height = 436
+            Height = 434
             Top = 0
             Width = 644
             ActivePage = tsMeasSimple
@@ -5558,7 +5558,7 @@ object frmMain: TfrmMain
             TabOrder = 0
             object tsMeasSimple: TTabSheet
               Caption = 'Eenvoudig'
-              ClientHeight = 402
+              ClientHeight = 400
               ClientWidth = 640
               object Label80: TLabel
                 Left = 6
@@ -5989,14 +5989,14 @@ object frmMain: TfrmMain
             end
             object tsMeasExt: TTabSheet
               Caption = 'Uitgebreid / TControl'
-              ClientHeight = 402
+              ClientHeight = 400
               ClientWidth = 640
               ParentFont = False
               object cbTemp1: TCheckBox
                 Left = 207
-                Height = 24
+                Height = 26
                 Top = 352
-                Width = 96
+                Width = 100
                 Caption = 'T sensor 1'
                 Checked = True
                 Color = clDefault
@@ -6010,9 +6010,9 @@ object frmMain: TfrmMain
               end
               object cbTemp2: TCheckBox
                 Left = 207
-                Height = 24
+                Height = 26
                 Top = 374
-                Width = 96
+                Width = 100
                 Caption = 'T sensor 2'
                 Checked = True
                 Color = clDefault
@@ -6026,9 +6026,9 @@ object frmMain: TfrmMain
               end
               object cbSetpoint: TCheckBox
                 Left = 321
-                Height = 24
+                Height = 26
                 Top = 352
-                Width = 98
+                Width = 103
                 Caption = 'inst. temp.'
                 Checked = True
                 Font.Color = clNavy
@@ -6040,9 +6040,9 @@ object frmMain: TfrmMain
               end
               object cbCO2: TCheckBox
                 Left = 321
-                Height = 24
+                Height = 26
                 Top = 374
-                Width = 56
+                Width = 58
                 Caption = 'CO2'
                 Checked = True
                 Font.Color = clPurple
@@ -6054,9 +6054,9 @@ object frmMain: TfrmMain
               end
               object cbSG: TCheckBox
                 Left = 431
-                Height = 24
+                Height = 26
                 Top = 352
-                Width = 46
+                Width = 48
                 Caption = 'SG'
                 Checked = True
                 Font.Color = 673530
@@ -6068,9 +6068,9 @@ object frmMain: TfrmMain
               end
               object cbCooling: TCheckBox
                 Left = 431
-                Height = 24
+                Height = 26
                 Top = 374
-                Width = 74
+                Width = 77
                 Caption = 'Koelen'
                 Checked = True
                 Font.Color = clBlue
@@ -6082,9 +6082,9 @@ object frmMain: TfrmMain
               end
               object cbHeating: TCheckBox
                 Left = 515
-                Height = 24
+                Height = 26
                 Top = 352
-                Width = 105
+                Width = 110
                 Caption = 'Verwarmen'
                 Checked = True
                 Font.Color = 27903
@@ -6096,9 +6096,9 @@ object frmMain: TfrmMain
               end
               object cbCoolPower: TCheckBox
                 Left = 515
-                Height = 24
+                Height = 26
                 Top = 374
-                Width = 95
+                Width = 99
                 Caption = 'Koelverm.'
                 Checked = True
                 Color = clDefault
@@ -6326,7 +6326,7 @@ object frmMain: TfrmMain
           Top = 0
           Width = 648
           Caption = 'Afvullen'
-          ClientHeight = 16
+          ClientHeight = 14
           ClientWidth = 644
           ParentShowHint = False
           TabOrder = 0
@@ -6336,7 +6336,7 @@ object frmMain: TfrmMain
             AnchorSideBottom.Control = gbBottleDates
             Left = 6
             Height = 22
-            Top = -3
+            Top = -4
             Width = 86
             Caption = 'Afvuldatum:'
             ParentColor = False
@@ -6348,7 +6348,7 @@ object frmMain: TfrmMain
             Left = 156
             Height = 22
             Hint = 'Datum van afvullen'
-            Top = -3
+            Top = -4
             Width = 136
             CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
             DateOrder = doNone
@@ -6366,7 +6366,7 @@ object frmMain: TfrmMain
             AnchorSideTop.Side = asrCenter
             Left = 304
             Height = 22
-            Top = -3
+            Top = -4
             Width = 206
             Anchors = [akTop]
             Caption = 'Aanbevolen koolzuurgehalte:'
@@ -6379,7 +6379,7 @@ object frmMain: TfrmMain
             Left = 499
             Height = 22
             Hint = 'Aanbevolen koolzuurgehalte voor de bierstijl'
-            Top = -3
+            Top = -4
             Width = 122
             Alignment = taCenter
             Anchors = [akTop]
@@ -6399,7 +6399,7 @@ object frmMain: TfrmMain
           Top = 56
           Width = 312
           Caption = 'Bottelen'
-          ClientHeight = 298
+          ClientHeight = 296
           ClientWidth = 308
           ParentShowHint = False
           TabOrder = 1
@@ -6631,7 +6631,7 @@ object frmMain: TfrmMain
           Top = 56
           Width = 329
           Caption = 'Op fust zetten'
-          ClientHeight = 298
+          ClientHeight = 296
           ClientWidth = 325
           ParentShowHint = False
           TabOrder = 2
@@ -6907,7 +6907,7 @@ object frmMain: TfrmMain
           Top = 396
           Width = 648
           Caption = 'Proeven'
-          ClientHeight = 217
+          ClientHeight = 215
           ClientWidth = 644
           ParentShowHint = False
           TabOrder = 3
@@ -7182,7 +7182,7 @@ object frmMain: TfrmMain
           Top = 0
           Width = 648
           Caption = 'Brouwers'
-          ClientHeight = 49
+          ClientHeight = 47
           ClientWidth = 644
           ParentShowHint = False
           TabOrder = 0
@@ -7237,13 +7237,13 @@ object frmMain: TfrmMain
           Top = 81
           Width = 648
           Caption = 'Notities'
-          ClientHeight = 617
+          ClientHeight = 615
           ClientWidth = 644
           ParentShowHint = False
           TabOrder = 1
           object mNotes: TMemo
             Left = 0
-            Height = 617
+            Height = 615
             Top = 0
             Width = 644
             Align = alClient
