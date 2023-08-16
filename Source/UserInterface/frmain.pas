@@ -151,8 +151,8 @@ type
     ilDefault: TImageList;
     lBrewsSort: TLabel;
     lRecipesSort: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
+    lColorMethod: TLabel;
+    lIBUMethod: TLabel;
     lStarterVolumeUnit2: TLabel;
     lStarterVolumeUnit3: TLabel;
     lSVG1: TLabel;
@@ -8996,9 +8996,9 @@ end;
   tbChart.Hint:= charthint1;
   tbTrainNN.Hint:= trainnnhint1;
   //settings tab
-  Label7.Caption:= color1;
+  lColorMethod.Caption:= color1;
   cbColorMethod.Hint:= colorhint1;
-  Label8.Caption:= bitterness1;
+  lIBUMethod.Caption:= bitterness1;
   cbIBUMethod.Hint:= bitternesshint1;
   bbSettings.Caption:= settings2;
   bbSettings.Hint:= settingshint2;
