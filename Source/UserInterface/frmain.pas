@@ -142,7 +142,7 @@ type
     lEstOG: TLabel;
     lIBUUnit: TLabel;
     lLastRunningSGUnit: TLabel;
-    Label140: TLabel;
+    lCloudSort: TLabel;
     lSGendmashUnit: TLabel;
     lMessage: TLabel;
     lSearchRecipes: TLabel;
@@ -9023,7 +9023,7 @@ end;
   eSearchRecipes.Hint:= filterrecipeshint1;
   lBrewsSort.Caption:= sort1;
   lRecipesSort.Caption:= sort1;
-  Label140.Caption:= sort1;
+  lCloudSort.Caption:= sort1;
   bbNewBrew.Caption:= newbrew1;
   bbNewBrew.Hint:= newbrewhint1;
   bbRemoveBrew.Caption:= removebrew1;

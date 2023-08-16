@@ -30,11 +30,11 @@ object frmMain: TfrmMain
       Height = 682
       Top = 1
       Width = 249
-      ActivePage = tsRecipes
+      ActivePage = tsCloud
       Align = alClient
       ParentShowHint = False
       ShowHint = True
-      TabIndex = 1
+      TabIndex = 2
       TabOrder = 0
       object tsBrews: TTabSheet
         Hint = 'Brouwsels zijn recepten die je zelf hebt gebrouwen'
@@ -640,7 +640,7 @@ object frmMain: TfrmMain
           ClientHeight = 63
           ClientWidth = 245
           TabOrder = 0
-          object Label140: TLabel
+          object lCloudSort: TLabel
             Left = 7
             Height = 22
             Top = 6
