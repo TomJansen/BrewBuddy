@@ -776,17 +776,17 @@ object frmMain: TfrmMain
     object pcRight: TPageControl
       Left = 0
       Height = 678
-      Top = 1
+      Top = 2
       Width = 186
-      ActivePage = tsSG
-      TabIndex = 0
+      ActivePage = tsExtra
+      TabIndex = 4
       TabOrder = 0
       TabPosition = tpRight
       object tsSG: TTabSheet
         Caption = 'SG, Brix, Plato'
         ClientHeight = 674
         ClientWidth = 153
-        object Label119: TLabel
+        object lSG: TLabel
           Left = 0
           Height = 20
           Top = 6
@@ -811,7 +811,7 @@ object frmMain: TfrmMain
           TabOrder = 0
           Value = 1
         end
-        object Label120: TLabel
+        object lPlato: TLabel
           Left = 0
           Height = 20
           Top = 34
@@ -835,7 +835,7 @@ object frmMain: TfrmMain
           TabOrder = 1
           Value = 1
         end
-        object Label121: TLabel
+        object lBrix: TLabel
           Left = 0
           Height = 20
           Top = 63
@@ -872,7 +872,7 @@ object frmMain: TfrmMain
           ParentFont = False
           WordWrap = True
         end
-        object Label126: TLabel
+        object lBrix2: TLabel
           Left = 0
           Height = 20
           Top = 117
@@ -896,7 +896,7 @@ object frmMain: TfrmMain
           TabOrder = 3
           Value = 1
         end
-        object Label124: TLabel
+        object lSG2: TLabel
           Left = 0
           Height = 20
           Top = 147
@@ -921,7 +921,7 @@ object frmMain: TfrmMain
           TabOrder = 4
           Value = 1
         end
-        object Label125: TLabel
+        object lPlato2: TLabel
           Left = 0
           Height = 20
           Top = 174
@@ -945,7 +945,7 @@ object frmMain: TfrmMain
           TabOrder = 5
           Value = 1
         end
-        object lABV1: TLabel
+        object lABV2: TLabel
           Left = 0
           Height = 20
           Top = 204
@@ -996,7 +996,7 @@ object frmMain: TfrmMain
         Caption = 'Water, suiker'
         ClientHeight = 674
         ClientWidth = 153
-        object Label127: TLabel
+        object lSG3: TLabel
           Left = 0
           Height = 20
           Top = 3
@@ -1050,7 +1050,7 @@ object frmMain: TfrmMain
           Caption = 'L'
           ParentColor = False
         end
-        object Label130: TLabel
+        object lWater: TLabel
           Left = 0
           Height = 20
           Top = 65
@@ -1072,7 +1072,7 @@ object frmMain: TfrmMain
           ShowHint = True
           TabOrder = 2
         end
-        object Label131: TLabel
+        object lWaterUnit: TLabel
           Left = 126
           Height = 20
           Top = 65
@@ -1080,7 +1080,7 @@ object frmMain: TfrmMain
           Caption = 'L'
           ParentColor = False
         end
-        object Label132: TLabel
+        object lSugar: TLabel
           Left = 0
           Height = 20
           Hint = 'Suiker erbij (kg)'
@@ -1104,7 +1104,7 @@ object frmMain: TfrmMain
           ShowHint = True
           TabOrder = 3
         end
-        object Label133: TLabel
+        object lSugarUnit: TLabel
           Left = 126
           Height = 20
           Top = 98
@@ -1112,7 +1112,7 @@ object frmMain: TfrmMain
           Caption = 'kg'
           ParentColor = False
         end
-        object Label134: TLabel
+        object lSGAfter: TLabel
           Left = 0
           Height = 20
           Top = 129
@@ -1136,7 +1136,7 @@ object frmMain: TfrmMain
           TabOrder = 4
           Value = 1.05
         end
-        object Label135: TLabel
+        object lVolumeAfter: TLabel
           Left = 0
           Height = 20
           Top = 157
@@ -1158,7 +1158,7 @@ object frmMain: TfrmMain
           TabOrder = 5
           Value = 25
         end
-        object Label136: TLabel
+        object lVolumeAfterUnit: TLabel
           Left = 126
           Height = 20
           Top = 157
@@ -1171,7 +1171,7 @@ object frmMain: TfrmMain
         Caption = 'Hydrometercorrectie'
         ClientHeight = 674
         ClientWidth = 153
-        object Label137: TLabel
+        object lSG4: TLabel
           Left = 0
           Height = 20
           Top = 7
@@ -1195,7 +1195,7 @@ object frmMain: TfrmMain
           TabOrder = 0
           Value = 1.05
         end
-        object Label138: TLabel
+        object lSGTemp: TLabel
           Left = 0
           Height = 20
           Top = 36
@@ -1216,7 +1216,7 @@ object frmMain: TfrmMain
           TabOrder = 1
           Value = 20
         end
-        object lTemp: TLabel
+        object lTempUnit: TLabel
           Left = 122
           Height = 20
           Top = 37
@@ -1224,7 +1224,7 @@ object frmMain: TfrmMain
           Caption = '°C'
           ParentColor = False
         end
-        object Label139: TLabel
+        object lSGCorr: TLabel
           Left = 0
           Height = 20
           Top = 69
