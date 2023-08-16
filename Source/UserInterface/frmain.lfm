@@ -30,11 +30,11 @@ object frmMain: TfrmMain
       Height = 682
       Top = 1
       Width = 249
-      ActivePage = tsBrews
+      ActivePage = tsRecipes
       Align = alClient
       ParentShowHint = False
       ShowHint = True
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 0
       object tsBrews: TTabSheet
         Hint = 'Brouwsels zijn recepten die je zelf hebt gebrouwen'
@@ -366,7 +366,7 @@ object frmMain: TfrmMain
           ClientHeight = 64
           ClientWidth = 245
           TabOrder = 1
-          object Label21: TLabel
+          object lRecipesSort: TLabel
             Left = 7
             Height = 22
             Top = 6
@@ -558,7 +558,7 @@ object frmMain: TfrmMain
           Font.Height = 13
           ParentFont = False
           TabOrder = 2
-          object Label156: TLabel
+          object lSearchRecipes: TLabel
             Left = 3
             Height = 18
             Top = 11
