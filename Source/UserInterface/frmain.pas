@@ -663,9 +663,9 @@ type
     gbNotes: TGroupBox;
     mNotes: TMemo;
     gbBrewers: TGroupBox;
-    Label45: TLabel;
+    lBrewer: TLabel;
     eBrewer: TEdit;
-    Label162: TLabel;
+    lAssistentBrewer: TLabel;
     eAssistantBrewer: TEdit;
     bbHideTools: TBitBtn;
     bbShowTools: TBitBtn;

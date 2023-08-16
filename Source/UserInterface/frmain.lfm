@@ -1916,12 +1916,12 @@ object frmMain: TfrmMain
       Height = 682
       Top = 1
       Width = 662
-      ActivePage = tsPackaging
+      ActivePage = tsNotes
       Align = alClient
       ParentBiDiMode = False
       ParentShowHint = False
       ShowHint = True
-      TabIndex = 4
+      TabIndex = 5
       TabOrder = 0
       object tsRecipe: TTabSheet
         Hint = 'Voer ingrediënten in en bereken bitterheid, kleur en begin SG'
@@ -7186,7 +7186,7 @@ object frmMain: TfrmMain
           ClientWidth = 644
           ParentShowHint = False
           TabOrder = 0
-          object Label45: TLabel
+          object lBrewer: TLabel
             Left = 7
             Height = 22
             Top = 7
@@ -7208,7 +7208,7 @@ object frmMain: TfrmMain
             TabOrder = 0
             Text = 'eBrewer'
           end
-          object Label162: TLabel
+          object lAssistentBrewer: TLabel
             Left = 7
             Height = 22
             Top = 35
