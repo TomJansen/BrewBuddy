@@ -1916,12 +1916,12 @@ object frmMain: TfrmMain
       Height = 682
       Top = 1
       Width = 662
-      ActivePage = tsFermentation
+      ActivePage = tsPackaging
       Align = alClient
       ParentBiDiMode = False
       ParentShowHint = False
       ShowHint = True
-      TabIndex = 3
+      TabIndex = 4
       TabOrder = 0
       object tsRecipe: TTabSheet
         Hint = 'Voer ingrediënten in en bereken bitterheid, kleur en begin SG'
@@ -2273,7 +2273,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 4
           end
-          object lColor: TLabel
+          object lColor2: TLabel
             Left = 225
             Height = 22
             Top = 61
@@ -6330,7 +6330,7 @@ object frmMain: TfrmMain
           ClientWidth = 644
           ParentShowHint = False
           TabOrder = 0
-          object Label49: TLabel
+          object lBottleDate: TLabel
             AnchorSideTop.Control = gbBottleDates
             AnchorSideTop.Side = asrCenter
             AnchorSideBottom.Control = gbBottleDates
@@ -6361,7 +6361,7 @@ object frmMain: TfrmMain
             ParentShowHint = False
             TabOrder = 0
           end
-          object Label89: TLabel
+          object lCO2Rec: TLabel
             AnchorSideTop.Control = gbBottleDates
             AnchorSideTop.Side = asrCenter
             Left = 304
@@ -6403,7 +6403,7 @@ object frmMain: TfrmMain
           ClientWidth = 308
           ParentShowHint = False
           TabOrder = 1
-          object Label90: TLabel
+          object lVolumeBottles: TLabel
             Left = 6
             Height = 22
             Top = 1
@@ -6426,7 +6426,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 0
           end
-          object lVolumeBottles: TLabel
+          object lVolumeBottlesUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 243
             Height = 20
@@ -6438,7 +6438,7 @@ object frmMain: TfrmMain
             ParentFont = False
             ParentShowHint = False
           end
-          object Label91: TLabel
+          object lCarbonation: TLabel
             Left = 6
             Height = 22
             Top = 30
@@ -6462,7 +6462,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 1
           end
-          object lCarbonation: TLabel
+          object lCarbonationUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 243
             Height = 20
@@ -6474,7 +6474,7 @@ object frmMain: TfrmMain
             ParentFont = False
             ParentShowHint = False
           end
-          object Label92: TLabel
+          object lAmountPrimingBottles: TLabel
             Left = 6
             Height = 22
             Top = 91
@@ -6498,7 +6498,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 3
           end
-          object lAmountPrimingBottles: TLabel
+          object lAmountPrimingBottlesUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 243
             Height = 22
@@ -6509,7 +6509,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label93: TLabel
+          object lTotAmBottles: TLabel
             Left = 6
             Height = 22
             Top = 120
@@ -6518,7 +6518,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lTotAmBottles: TLabel
+          object lTotAmBottlesUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 243
             Height = 22
@@ -6529,7 +6529,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label94: TLabel
+          object lABVBottles: TLabel
             Left = 6
             Height = 22
             Top = 151
@@ -6552,7 +6552,7 @@ object frmMain: TfrmMain
             TabStop = False
             TabOrder = 5
           end
-          object Label101: TLabel
+          object lCarbonationTemp: TLabel
             Left = 6
             Height = 22
             Top = 180
@@ -6575,7 +6575,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 4
           end
-          object lCarbonationTemp: TLabel
+          object lCarbonationTempUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 243
             Height = 22
@@ -6586,7 +6586,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label103: TLabel
+          object lPrimingSugarBottles: TLabel
             Left = 6
             Height = 22
             Top = 61
@@ -6635,7 +6635,7 @@ object frmMain: TfrmMain
           ClientWidth = 325
           ParentShowHint = False
           TabOrder = 2
-          object Label95: TLabel
+          object lVolumeKegs: TLabel
             Left = 6
             Height = 22
             Top = 1
@@ -6658,7 +6658,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 0
           end
-          object lVolumeKegs: TLabel
+          object lVolumeKegsUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 242
             Height = 22
@@ -6669,7 +6669,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lCarbonationKegs: TLabel
+          object lCarbonationKegsUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 242
             Height = 22
@@ -6693,7 +6693,7 @@ object frmMain: TfrmMain
             ParentShowHint = False
             TabOrder = 1
           end
-          object Label96: TLabel
+          object lCarbonationKegs: TLabel
             Left = 6
             Height = 22
             Top = 30
@@ -6702,7 +6702,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label97: TLabel
+          object lAmountPrimingKegs: TLabel
             Left = 6
             Height = 22
             Top = 120
@@ -6726,7 +6726,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 4
           end
-          object lAmountPrimingKegs: TLabel
+          object lAmountPrimingKegsUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 242
             Height = 22
@@ -6737,7 +6737,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object lTotAmKegs: TLabel
+          object lTotAmKegsUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 242
             Height = 22
@@ -6748,7 +6748,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label98: TLabel
+          object lTotAmKegs: TLabel
             Left = 6
             Height = 22
             Top = 151
@@ -6757,7 +6757,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label99: TLabel
+          object lABVKegs: TLabel
             Left = 6
             Height = 22
             Top = 211
@@ -6792,7 +6792,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 2
           end
-          object Label100: TLabel
+          object lPressureKegs: TLabel
             Left = 6
             Height = 22
             Top = 181
@@ -6816,7 +6816,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 5
           end
-          object lPressureKegs: TLabel
+          object lPressureKegsUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 242
             Height = 22
@@ -6827,7 +6827,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label102: TLabel
+          object lCarbonationTempKegs: TLabel
             Left = 6
             Height = 34
             Top = 234
@@ -6852,7 +6852,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 6
           end
-          object lCarbonationTempKegs: TLabel
+          object lCarbonationTempKegsUnit: TLabel
             AnchorSideRight.Side = asrBottom
             Left = 242
             Height = 22
@@ -6863,7 +6863,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label104: TLabel
+          object lPrimingSugarKegs: TLabel
             Left = 7
             Height = 22
             Top = 97
@@ -6911,7 +6911,7 @@ object frmMain: TfrmMain
           ClientWidth = 644
           ParentShowHint = False
           TabOrder = 3
-          object Label105: TLabel
+          object lTasteDate: TLabel
             Left = 10
             Height = 22
             Top = 1
@@ -6937,7 +6937,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 0
           end
-          object Label106: TLabel
+          object lColor: TLabel
             Left = 10
             Height = 22
             Top = 27
@@ -6959,7 +6959,7 @@ object frmMain: TfrmMain
             TabOrder = 2
             Text = 'eColor'
           end
-          object Label107: TLabel
+          object lTransparency: TLabel
             Left = 325
             Height = 22
             Top = 53
@@ -6980,7 +6980,7 @@ object frmMain: TfrmMain
             TabOrder = 3
             Text = 'Edit1'
           end
-          object Label108: TLabel
+          object lHead: TLabel
             Left = 10
             Height = 22
             Top = 52
@@ -7002,7 +7002,7 @@ object frmMain: TfrmMain
             TabOrder = 4
             Text = 'Edit1'
           end
-          object Label109: TLabel
+          object lAroma: TLabel
             Left = 10
             Height = 22
             Top = 78
@@ -7024,7 +7024,7 @@ object frmMain: TfrmMain
             TabOrder = 5
             Text = 'Edit1'
           end
-          object Label110: TLabel
+          object lTaste: TLabel
             Left = 10
             Height = 22
             Top = 103
@@ -7046,7 +7046,7 @@ object frmMain: TfrmMain
             TabOrder = 6
             Text = 'Edit1'
           end
-          object Label111: TLabel
+          object lAftertaste: TLabel
             Left = 11
             Height = 22
             Top = 129
@@ -7068,7 +7068,7 @@ object frmMain: TfrmMain
             TabOrder = 7
             Text = 'Edit1'
           end
-          object Label112: TLabel
+          object lAgeTemp: TLabel
             Left = 262
             Height = 22
             Top = 1
@@ -7091,7 +7091,7 @@ object frmMain: TfrmMain
             ShowHint = True
             TabOrder = 1
           end
-          object lAgeTemp: TLabel
+          object lAgeTempUnit: TLabel
             Left = 480
             Height = 22
             Top = 1
@@ -7100,7 +7100,7 @@ object frmMain: TfrmMain
             ParentColor = False
             ParentShowHint = False
           end
-          object Label113: TLabel
+          object lMouthfeel: TLabel
             Left = 10
             Height = 22
             Top = 154
@@ -7110,7 +7110,7 @@ object frmMain: TfrmMain
             ParentShowHint = False
           end
           object eMouthfeel: TEdit
-            Left = 87
+            Left = 88
             Height = 24
             Hint = 'Beschrijf het mondgevoel van het bier'
             Top = 151
@@ -7122,7 +7122,7 @@ object frmMain: TfrmMain
             TabOrder = 8
             Text = 'Edit1'
           end
-          object Label114: TLabel
+          object lTasteNotes: TLabel
             Left = 10
             Height = 22
             Top = 180
@@ -7144,7 +7144,7 @@ object frmMain: TfrmMain
             TabOrder = 9
             Text = 'Edit1'
           end
-          object Label115: TLabel
+          object lTastingRate: TLabel
             Left = 10
             Height = 22
             Top = 204
