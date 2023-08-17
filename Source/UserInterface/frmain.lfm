@@ -1,12 +1,12 @@
 object frmMain: TfrmMain
-  Left = 2007
-  Height = 766
-  Top = 149
-  Width = 1101
+  Left = 1980
+  Height = 886
+  Top = 68
+  Width = 1123
   BorderStyle = bsSingle
   Caption = 'BrewBuddy'
-  ClientHeight = 766
-  ClientWidth = 1101
+  ClientHeight = 886
+  ClientWidth = 1123
   DesignTimePPI = 102
   Font.Height = 15
   Menu = MainMenu1
@@ -17,34 +17,34 @@ object frmMain: TfrmMain
   LCLVersion = '2.2.6.0'
   object pRecipes: TPanel
     Left = 0
-    Height = 684
+    Height = 804
     Top = 82
     Width = 251
     Align = alLeft
     BevelOuter = bvLowered
-    ClientHeight = 684
+    ClientHeight = 804
     ClientWidth = 251
     TabOrder = 0
     object pcRecipes: TPageControl
       Left = 1
-      Height = 682
+      Height = 802
       Top = 1
       Width = 249
-      ActivePage = tsCloud
+      ActivePage = tsBrews
       Align = alClient
       ParentShowHint = False
       ShowHint = True
-      TabIndex = 2
+      TabIndex = 0
       TabOrder = 0
       object tsBrews: TTabSheet
         Hint = 'Brouwsels zijn recepten die je zelf hebt gebrouwen'
         Caption = 'Brouwsels'
-        ClientHeight = 647
+        ClientHeight = 767
         ClientWidth = 245
         ParentShowHint = False
         object tvBrews: TTreeView
           Left = 0
-          Height = 541
+          Height = 661
           Top = 42
           Width = 245
           Align = alClient
@@ -65,7 +65,7 @@ object frmMain: TfrmMain
         object pRecipesButtons: TPanel
           Left = 0
           Height = 64
-          Top = 583
+          Top = 703
           Width = 245
           Align = alBottom
           ClientHeight = 64
@@ -337,12 +337,12 @@ object frmMain: TfrmMain
       object tsRecipes: TTabSheet
         Hint = 'Recepten kunnen van jezelf zijn of van derden'
         Caption = 'Recepten'
-        ClientHeight = 647
+        ClientHeight = 767
         ClientWidth = 245
         ParentShowHint = False
         object tvRecipes: TTreeView
           Left = 0
-          Height = 541
+          Height = 661
           Top = 42
           Width = 245
           Align = alClient
@@ -360,7 +360,7 @@ object frmMain: TfrmMain
         object pRecipesButtons1: TPanel
           Left = 0
           Height = 64
-          Top = 583
+          Top = 703
           Width = 245
           Align = alBottom
           ClientHeight = 64
@@ -628,13 +628,13 @@ object frmMain: TfrmMain
       end
       object tsCloud: TTabSheet
         Caption = 'Cloud'
-        ClientHeight = 647
+        ClientHeight = 767
         ClientWidth = 245
         TabVisible = False
         object pCloudButtons: TPanel
           Left = 0
           Height = 63
-          Top = 584
+          Top = 704
           Width = 245
           Align = alBottom
           ClientHeight = 63
@@ -742,7 +742,7 @@ object frmMain: TfrmMain
         end
         object tvCloud: TTreeView
           Left = 0
-          Height = 584
+          Height = 704
           Top = 0
           Width = 245
           Align = alClient
@@ -759,14 +759,14 @@ object frmMain: TfrmMain
     end
   end
   object pRight: TPanel
-    Left = 915
-    Height = 684
+    Left = 937
+    Height = 804
     Hint = 'Rekenhulpjes'
     Top = 82
     Width = 186
     Align = alRight
     BevelOuter = bvLowered
-    ClientHeight = 684
+    ClientHeight = 804
     ClientWidth = 186
     ParentColor = False
     ParentFont = False
@@ -1464,23 +1464,23 @@ object frmMain: TfrmMain
   end
   object pMain: TPanel
     Left = 251
-    Height = 684
+    Height = 804
     Top = 82
-    Width = 664
+    Width = 686
     Align = alClient
     Alignment = taLeftJustify
     BevelOuter = bvLowered
     BidiMode = bdRightToLeft
-    ClientHeight = 684
-    ClientWidth = 664
+    ClientHeight = 804
+    ClientWidth = 686
     ParentBidiMode = False
     ParentShowHint = False
     TabOrder = 1
     object pcAnalysis: TPageControl
       Left = 1
-      Height = 682
+      Height = 802
       Top = 1
-      Width = 662
+      Width = 684
       ActivePage = tsAnalysisCommon
       Align = alClient
       ParentBiDiMode = False
@@ -1488,13 +1488,13 @@ object frmMain: TfrmMain
       TabOrder = 1
       object tsAnalysisCommon: TTabSheet
         Caption = 'Algemeen'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         object chCommon: TChart
           Left = 0
-          Height = 647
+          Height = 767
           Top = 0
-          Width = 658
+          Width = 680
           AxisList = <          
             item
               Marks.LabelBrush.Style = bsClear
@@ -1533,13 +1533,13 @@ object frmMain: TfrmMain
       end
       object tsFermentables: TTabSheet
         Caption = 'Vergistbare ingrediënten'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         object chAFerm: TChart
           Left = 0
-          Height = 647
+          Height = 767
           Top = 0
-          Width = 658
+          Width = 680
           AxisList = <          
             item
               Marks.LabelBrush.Style = bsClear
@@ -1592,16 +1592,16 @@ object frmMain: TfrmMain
       end
       object tsHops: TTabSheet
         Caption = 'Hop'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         object pAnalysisHops: TPanel
           Left = 0
           Height = 44
-          Top = 603
-          Width = 658
+          Top = 723
+          Width = 680
           Align = alBottom
           ClientHeight = 44
-          ClientWidth = 658
+          ClientWidth = 680
           TabOrder = 0
           object rgBitterhop: TRadioButton
             Left = 13
@@ -1633,9 +1633,9 @@ object frmMain: TfrmMain
         end
         object chAnalyseHops: TChart
           Left = 0
-          Height = 603
+          Height = 723
           Top = 0
-          Width = 658
+          Width = 680
           AxisList = <          
             item
               Marks.LabelBrush.Style = bsClear
@@ -1700,13 +1700,13 @@ object frmMain: TfrmMain
       end
       object tsYeast: TTabSheet
         Caption = 'Gist'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         object chAnalyseYeast: TChart
           Left = 0
-          Height = 647
+          Height = 767
           Top = 0
-          Width = 658
+          Width = 680
           AxisList = <          
             item
               Marks.LabelBrush.Style = bsClear
@@ -1745,13 +1745,13 @@ object frmMain: TfrmMain
       end
       object tsMiscs: TTabSheet
         Caption = 'Overige ingrediënten'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         object chAnalyseMiscs: TChart
           Left = 0
-          Height = 647
+          Height = 767
           Top = 0
-          Width = 658
+          Width = 680
           AxisList = <          
             item
               Marks.LabelBrush.Style = bsClear
@@ -1811,7 +1811,7 @@ object frmMain: TfrmMain
       end
     end
     object bbShowTools: TBitBtn
-      Left = -111
+      Left = -89
       Height = 22
       Hint = 'Toon rekenhulpjes'
       Top = 2
@@ -1862,7 +1862,7 @@ object frmMain: TfrmMain
       Visible = False
     end
     object bbHideTools: TBitBtn
-      Left = -113
+      Left = -91
       Height = 22
       Hint = 'Verberg rekenhulpjes'
       Top = 1
@@ -1913,90 +1913,129 @@ object frmMain: TfrmMain
     end
     object pcRecipe: TPageControl
       Left = 1
-      Height = 682
+      Height = 802
       Top = 1
-      Width = 662
-      ActivePage = tsNotes
+      Width = 684
+      ActivePage = tsRecipe
       Align = alClient
       ParentBiDiMode = False
       ParentShowHint = False
       ShowHint = True
-      TabIndex = 5
+      TabIndex = 0
       TabOrder = 0
       object tsRecipe: TTabSheet
         Hint = 'Voer ingrediënten in en bereken bitterheid, kleur en begin SG'
         Caption = 'Recept'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         ParentShowHint = False
         object gbAlgemeen: TGroupBox
-          Left = 0
-          Height = 104
-          Top = 0
-          Width = 653
+          AnchorSideLeft.Control = tsRecipe
+          AnchorSideTop.Control = tsRecipe
+          AnchorSideRight.Control = tsRecipe
+          AnchorSideRight.Side = asrBottom
+          Left = 5
+          Height = 162
+          Top = 5
+          Width = 670
+          Anchors = [akTop, akLeft, akRight]
+          AutoSize = True
+          BorderSpacing.Around = 5
           Caption = 'Algemeen'
-          ClientHeight = 70
-          ClientWidth = 649
+          ClientHeight = 128
+          ClientWidth = 666
           ParentShowHint = False
           TabOrder = 0
           object tlBrewCode: TLabel
-            Left = 6
+            AnchorSideLeft.Control = gbAlgemeen
+            AnchorSideTop.Control = eNrRecipe
+            AnchorSideTop.Side = asrCenter
+            Left = 5
             Height = 22
-            Top = 3
+            Top = 12
             Width = 41
+            BorderSpacing.Left = 5
             Caption = 'Code:'
             ParentColor = False
             ParentShowHint = False
           end
           object eNrRecipe: TEdit
-            Left = 75
-            Height = 27
+            AnchorSideLeft.Control = tlBrewCode
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = gbAlgemeen
+            Left = 51
+            Height = 36
             Hint = 'Geef een code of nummer aan het brouwsel'
-            Top = -2
+            Top = 5
             Width = 63
-            AutoSize = False
+            BorderSpacing.Left = 5
+            BorderSpacing.Top = 5
             OnChange = eNrRecipeChange
             ParentShowHint = False
             ShowHint = True
             TabOrder = 0
           end
           object tlBrewName: TLabel
-            Left = 144
+            AnchorSideLeft.Control = eNrRecipe
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = eName
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = eName
+            Left = 119
             Height = 22
-            Top = 4
+            Top = 12
             Width = 47
+            BorderSpacing.Left = 5
+            BorderSpacing.Right = 5
             Caption = 'Naam:'
             ParentColor = False
             ParentShowHint = False
           end
           object eName: TEdit
-            Left = 187
-            Height = 27
+            AnchorSideLeft.Control = tlBrewName
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = gbAlgemeen
+            Left = 171
+            Height = 36
             Hint = 'Geef een naam aan het bier'
-            Top = -2
+            Top = 5
             Width = 283
-            AutoSize = False
+            BorderSpacing.Left = 5
+            BorderSpacing.Top = 5
             OnChange = eNameChange
             ParentShowHint = False
             ShowHint = True
             TabOrder = 1
           end
           object tlBrewType: TLabel
-            Left = 255
+            AnchorSideLeft.Control = gbAlgemeen
+            AnchorSideTop.Control = cbType
+            AnchorSideTop.Side = asrCenter
+            Left = 5
             Height = 22
-            Top = 32
+            Top = 94
             Width = 106
+            BorderSpacing.Left = 5
             Caption = 'Type brouwsel:'
             ParentColor = False
             ParentShowHint = False
           end
           object cbType: TComboBox
-            Left = 348
-            Height = 22
+            AnchorSideLeft.Control = tlBrewType
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = cbBeerStyle
+            AnchorSideTop.Side = asrBottom
+            AnchorSideBottom.Control = gbAlgemeen
+            AnchorSideBottom.Side = asrBottom
+            Left = 116
+            Height = 36
             Hint = 'Type brouwsel'
-            Top = 27
+            Top = 87
             Width = 121
-            AutoSize = False
+            Anchors = [akTop, akLeft, akBottom]
+            BorderSpacing.Left = 5
+            BorderSpacing.Top = 5
+            BorderSpacing.Bottom = 5
             ItemHeight = 22
             OnChange = cbTypeChange
             ParentShowHint = False
@@ -2005,21 +2044,30 @@ object frmMain: TfrmMain
             TabOrder = 4
           end
           object tlBrewStyle: TLabel
-            Left = 6
+            AnchorSideLeft.Control = gbAlgemeen
+            AnchorSideTop.Control = cbBeerStyle
+            AnchorSideTop.Side = asrCenter
+            Left = 5
             Height = 22
-            Top = 33
+            Top = 53
             Width = 57
+            BorderSpacing.Left = 5
             Caption = 'Bierstijl:'
             ParentColor = False
             ParentShowHint = False
           end
           object cbBeerStyle: TComboBox
-            Left = 75
-            Height = 22
+            AnchorSideLeft.Control = tlBrewType
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = eName
+            AnchorSideTop.Side = asrBottom
+            Left = 116
+            Height = 36
             Hint = 'Bierstijl van het bier'
-            Top = 27
+            Top = 46
             Width = 170
-            AutoSize = False
+            BorderSpacing.Left = 5
+            BorderSpacing.Top = 5
             ItemHeight = 22
             OnChange = cbBeerStyleChange
             ParentShowHint = False
@@ -2028,21 +2076,35 @@ object frmMain: TfrmMain
             TabOrder = 2
           end
           object tlEquipment: TLabel
-            Left = 8
+            AnchorSideLeft.Control = gbAlgemeen
+            AnchorSideTop.Control = cbEquipment
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = cbEquipment
+            Left = 241
             Height = 22
-            Top = 64
+            Top = 94
             Width = 74
+            Anchors = [akTop, akRight]
+            BorderSpacing.Left = 5
+            BorderSpacing.Right = 5
             Caption = 'Installatie:'
             ParentColor = False
             ParentShowHint = False
           end
           object cbEquipment: TComboBox
-            Left = 75
-            Height = 22
+            AnchorSideLeft.Control = tlBrewType
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = cbType
+            AnchorSideTop.Side = asrCenter
+            AnchorSideBottom.Side = asrBottom
+            Left = 320
+            Height = 36
             Hint = 'Installatie waarop het bier gebrouwen wordt'
-            Top = 56
+            Top = 87
             Width = 170
-            AutoSize = False
+            Anchors = [akTop]
+            BorderSpacing.Left = 5
+            BorderSpacing.Bottom = 5
             ItemHeight = 22
             ParentShowHint = False
             ShowHint = True
@@ -2050,21 +2112,35 @@ object frmMain: TfrmMain
             TabOrder = 3
           end
           object tlBrewVolume: TLabel
-            Left = 478
+            AnchorSideLeft.Control = eName
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = fseBatchSize
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = fseBatchSize
+            Left = 490
             Height = 22
-            Top = 33
+            Top = 53
             Width = 58
+            Anchors = [akTop, akRight]
+            BorderSpacing.Right = 5
             Caption = 'Volume:'
             ParentColor = False
             ParentShowHint = False
           end
           object fseBatchSize: TFloatSpinEdit
-            Left = 532
-            Height = 28
+            AnchorSideLeft.Control = tlBrewVolume
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = eName
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = lBatchSize
+            Left = 553
+            Height = 36
             Hint = 'Volume aan het eind van het koken in de kookketel'
-            Top = 27
+            Top = 46
             Width = 95
-            AutoSize = False
+            Anchors = [akTop, akRight]
+            BorderSpacing.Left = 5
+            BorderSpacing.Top = 5
             DecimalPlaces = 1
             MaxValue = 100000
             MinValue = 1
@@ -2075,20 +2151,36 @@ object frmMain: TfrmMain
             Value = 25
           end
           object lBatchSize: TLabel
-            Left = 629
+            AnchorSideLeft.Control = fseBatchSize
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = fseBatchSize
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = gbAlgemeen
+            AnchorSideRight.Side = asrBottom
+            Left = 653
             Height = 22
-            Top = 34
-            Width = 10
-            Anchors = [akTop, akLeft, akRight]
+            Top = 53
+            Width = 8
+            Anchors = [akTop, akRight]
+            BorderSpacing.Left = 5
+            BorderSpacing.Right = 5
             Caption = 'L'
             ParentColor = False
           end
           object cbScaleVolume: TCheckBox
-            Left = 488
+            AnchorSideLeft.Control = tlBrewVolume
+            AnchorSideTop.Control = fseBatchSize
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = gbAlgemeen
+            AnchorSideRight.Side = asrBottom
+            Left = 490
             Height = 26
             Hint = 'Verander alle hoeveelheden mee met het volume'
-            Top = 60
-            Width = 162
+            Top = 87
+            Width = 171
+            Anchors = [akTop, akLeft, akRight]
+            BorderSpacing.Top = 5
+            BorderSpacing.Right = 5
             Caption = 'Schaal met volume'
             OnChange = cbScaleVolumeChange
             ParentShowHint = False
@@ -2096,10 +2188,17 @@ object frmMain: TfrmMain
             TabOrder = 7
           end
           object cbLocked: TCheckBox
-            Left = 488
+            AnchorSideLeft.Control = tlBrewVolume
+            AnchorSideTop.Control = eName
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = gbAlgemeen
+            AnchorSideRight.Side = asrBottom
+            Left = 490
             Height = 26
-            Top = -2
-            Width = 104
+            Top = 10
+            Width = 171
+            Anchors = [akTop, akLeft, akRight]
+            BorderSpacing.Right = 5
             Caption = 'Afgesloten'
             OnChange = cbLockedChange
             ParentShowHint = False
@@ -2108,20 +2207,31 @@ object frmMain: TfrmMain
           end
         end
         object gbIngredients: TGroupBox
-          Left = 0
-          Height = 372
-          Top = 110
-          Width = 653
+          AnchorSideLeft.Control = tsRecipe
+          AnchorSideTop.Control = gbAlgemeen
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = tsRecipe
+          AnchorSideRight.Side = asrBottom
+          Left = 5
+          Height = 428
+          Top = 172
+          Width = 670
+          Anchors = [akTop, akLeft, akRight]
+          AutoSize = True
+          BorderSpacing.Around = 5
           Caption = 'Ingrediënten'
-          ClientHeight = 338
-          ClientWidth = 649
+          ClientHeight = 394
+          ClientWidth = 666
           ParentShowHint = False
           TabOrder = 2
           OnClick = gbIngredientsClick
           object hcIngredients: THeaderControl
-            Left = 3
+            AnchorSideLeft.Control = gbIngredients
+            AnchorSideTop.Control = eColor2
+            AnchorSideTop.Side = asrBottom
+            Left = 5
             Height = 19
-            Top = 95
+            Top = 128
             Width = 531
             DragReorder = False
             Sections = <            
@@ -2157,13 +2267,22 @@ object frmMain: TfrmMain
               end>
             OnSectionClick = hcIngredientsSectionClick
             OnSectionResize = hcIngredientsSectionResize
+            BorderSpacing.Left = 5
+            BorderSpacing.Top = 5
             ParentShowHint = False
           end
           object sgIngredients: TStringGrid
-            Left = 4
+            AnchorSideLeft.Control = gbIngredients
+            AnchorSideTop.Control = hcIngredients
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = hcIngredients
+            AnchorSideRight.Side = asrBottom
+            Left = 5
             Height = 201
-            Top = 114
+            Top = 147
             Width = 531
+            Anchors = [akTop, akLeft, akRight]
+            BorderSpacing.Left = 5
             Color = clDefault
             FixedCols = 0
             FixedRows = 0
@@ -2178,11 +2297,15 @@ object frmMain: TfrmMain
             OnSelectCell = sgIngredientsSelectCell
           end
           object cbPercentage: TCheckBox
-            Left = 6
+            AnchorSideLeft.Control = gbIngredients
+            AnchorSideTop.Control = eCosts
+            AnchorSideTop.Side = asrCenter
+            Left = 5
             Height = 26
             Hint = 'Voer hoeveelheden mout in als percentage van de stort'
-            Top = 319
+            Top = 358
             Width = 373
+            BorderSpacing.Left = 5
             Caption = 'Reken met percentages vergistbare ingrediënten'
             OnChange = cbPercentageChange
             ParentShowHint = False
@@ -2190,21 +2313,27 @@ object frmMain: TfrmMain
             TabOrder = 9
           end
           object lBeginSG: TLabel
-            Left = 6
+            AnchorSideLeft.Control = gbIngredients
+            AnchorSideTop.Control = fseOG
+            AnchorSideTop.Side = asrCenter
+            Left = 5
             Height = 22
-            Top = 5
+            Top = 12
             Width = 68
+            BorderSpacing.Left = 5
             Caption = 'Begin SG:'
             ParentColor = False
             ParentShowHint = False
           end
           object fseOG: TFloatSpinEdit
-            Left = 110
-            Height = 28
+            AnchorSideLeft.Control = eFGest
+            AnchorSideTop.Control = gbIngredients
+            Left = 129
+            Height = 36
             Hint = 'Begin SG van het brouwsel'
-            Top = -1
+            Top = 5
             Width = 79
-            AutoSize = False
+            BorderSpacing.Top = 5
             DecimalPlaces = 3
             Increment = 0.001
             MaxValue = 1.3
@@ -2216,24 +2345,33 @@ object frmMain: TfrmMain
             Value = 1
           end
           object lEfficiency: TLabel
-            Left = 407
-            Height = 15
-            Top = 61
-            Width = 128
+            AnchorSideTop.Control = fseEfficiency
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = fseEfficiency
+            Left = 479
+            Height = 42
+            Top = 43
+            Width = 80
             Alignment = taRightJustify
-            AutoSize = False
-            Caption = 'Brouwzaalrendement:'
+            Anchors = [akTop, akRight]
+            BorderSpacing.Right = 5
+            Caption = 'Brouwzaal'#10'rendement'
             ParentColor = False
             ParentShowHint = False
             WordWrap = True
           end
           object fseEfficiency: TFloatSpinEdit
-            Left = 549
-            Height = 28
+            AnchorSideTop.Control = fseBoilTime
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = lEfficiencyPercent
+            Left = 564
+            Height = 36
             Hint = 'Brouwzaalrendement'
-            Top = 55
+            Top = 46
             Width = 60
-            AutoSize = False
+            Anchors = [akTop, akRight]
+            BorderSpacing.Top = 5
+            BorderSpacing.Right = 5
             DecimalPlaces = 0
             OnChange = fseEfficiencyChange
             ParentShowHint = False
@@ -2242,30 +2380,46 @@ object frmMain: TfrmMain
             Value = 80
           end
           object lEfficiencyPercent: TLabel
-            Left = 613
+            AnchorSideLeft.Control = lBoilTimeUnit
+            AnchorSideTop.Control = fseEfficiency
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = gbIngredients
+            AnchorSideRight.Side = asrBottom
+            Left = 629
             Height = 22
-            Top = 61
-            Width = 13
+            Top = 53
+            Width = 32
+            Anchors = [akTop, akLeft, akRight]
+            BorderSpacing.Right = 5
             Caption = '%'
             ParentColor = False
             ParentShowHint = False
           end
           object lIBU: TLabel
-            Left = 225
+            AnchorSideLeft.Control = fseIBU
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = fseIBU
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = fseIBU
+            Left = 273
             Height = 22
-            Top = 5
+            Top = 12
             Width = 74
+            Anchors = [akTop, akRight]
+            BorderSpacing.Right = 5
             Caption = 'Bitterheid:'
             ParentColor = False
             ParentShowHint = False
           end
           object fseIBU: TFloatSpinEdit
-            Left = 328
-            Height = 28
+            AnchorSideTop.Control = gbIngredients
+            Left = 352
+            Height = 36
             Hint = 'Berekende bitterheid van het bier'
-            Top = -1
+            Top = 5
             Width = 61
-            AutoSize = False
+            Anchors = [akTop]
+            BorderSpacing.Top = 5
             DecimalPlaces = 0
             MaxValue = 200
             OnChange = fseIBUChange
@@ -2274,31 +2428,41 @@ object frmMain: TfrmMain
             TabOrder = 4
           end
           object lColor2: TLabel
-            Left = 225
+            AnchorSideTop.Control = eColor2
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = eColor2
+            Left = 246
             Height = 22
-            Top = 61
+            Top = 94
             Width = 42
+            Anchors = [akTop, akRight]
+            BorderSpacing.Right = 5
             Caption = 'Kleur:'
             ParentColor = False
             ParentShowHint = False
           end
           object lIBUUnit: TLabel
-            Left = 393
-            Height = 15
-            Top = 5
-            Width = 22
-            AutoSize = False
+            AnchorSideLeft.Control = fseIBU
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = fseIBU
+            AnchorSideTop.Side = asrCenter
+            Left = 418
+            Height = 22
+            Top = 12
+            Width = 26
+            BorderSpacing.Left = 5
             Caption = 'IBU'
             ParentColor = False
             ParentShowHint = False
             OptimalFill = True
           end
           object bbAddGrain: TBitBtn
-            Left = 541
+            Left = 545
             Height = 32
             Hint = 'Voeg vergistbaar ingrediÃ«nt toe'
-            Top = 114
+            Top = 152
             Width = 71
+            Anchors = [akTop]
             BorderSpacing.CellAlignHorizontal = ccaCenter
             BorderSpacing.CellAlignVertical = ccaCenter
             Caption = 'Mout'
@@ -2344,11 +2508,12 @@ object frmMain: TfrmMain
             TabOrder = 10
           end
           object bbAddHop: TBitBtn
-            Left = 541
+            Left = 545
             Height = 32
             Hint = 'Voeg hop toe'
-            Top = 148
+            Top = 186
             Width = 71
+            Anchors = [akTop]
             BorderSpacing.CellAlignHorizontal = ccaCenter
             BorderSpacing.CellAlignVertical = ccaCenter
             Caption = 'Hop'
@@ -2384,21 +2549,25 @@ object frmMain: TfrmMain
             TabOrder = 11
           end
           object lAdd: TLabel
-            Left = 560
+            AnchorSideTop.Control = hcIngredients
+            AnchorSideTop.Side = asrCenter
+            Left = 564
             Height = 22
-            Top = 96
+            Top = 126
             Width = 63
             Alignment = taCenter
+            Anchors = [akTop]
             Caption = 'Voeg toe'
             ParentColor = False
             ParentShowHint = False
           end
           object bbAddMisc: TBitBtn
-            Left = 541
+            Left = 545
             Height = 32
             Hint = 'Voeg overig ingrediÃ«nt toe'
-            Top = 183
+            Top = 221
             Width = 103
+            Anchors = [akTop]
             BorderSpacing.CellAlignHorizontal = ccaCenter
             BorderSpacing.CellAlignVertical = ccaCenter
             Caption = 'Overig'
@@ -2444,11 +2613,12 @@ object frmMain: TfrmMain
             TabOrder = 12
           end
           object bbAddYeast: TBitBtn
-            Left = 541
+            Left = 545
             Height = 32
             Hint = 'Voeg gist toe'
-            Top = 217
+            Top = 255
             Width = 103
+            Anchors = [akTop]
             Caption = 'Gist'
             Glyph.Data = {
               36030000424D360300000000000036000000280000000C000000100000000100
@@ -2484,11 +2654,12 @@ object frmMain: TfrmMain
             TabOrder = 13
           end
           object bbRemove: TBitBtn
-            Left = 541
+            Left = 545
             Height = 32
             Hint = 'Verwijder geselecteerde ingrediÃ«nt'
-            Top = 251
+            Top = 289
             Width = 103
+            Anchors = [akTop]
             BorderSpacing.CellAlignHorizontal = ccaCenter
             BorderSpacing.CellAlignVertical = ccaCenter
             Caption = 'Verwijder'
@@ -2535,39 +2706,54 @@ object frmMain: TfrmMain
             TabOrder = 14
           end
           object lBUGU: TLabel
-            Left = 225
+            AnchorSideTop.Control = eBUGU
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = eBUGU
+            Left = 227
             Height = 22
-            Top = 32
+            Top = 53
             Width = 120
+            Anchors = [akTop, akRight]
+            BorderSpacing.Right = 5
             Caption = 'Bitterheidsindex:'
             ParentColor = False
             ParentShowHint = False
           end
           object lBUGUUnit: TLabel
-            Left = 394
+            AnchorSideLeft.Control = eBUGU
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = eBUGU
+            AnchorSideTop.Side = asrCenter
+            Left = 418
             Height = 22
-            Top = 32
+            Top = 53
             Width = 49
             Alignment = taCenter
+            BorderSpacing.Left = 5
             Caption = 'BU/GU'
             ParentColor = False
             ParentShowHint = False
           end
           object lFGest: TLabel
-            Left = 6
+            AnchorSideLeft.Control = gbIngredients
+            AnchorSideTop.Control = eFGest
+            AnchorSideTop.Side = asrCenter
+            Left = 5
             Height = 22
-            Top = 32
+            Top = 53
             Width = 119
+            BorderSpacing.Left = 5
             Caption = 'Geschat eind SG:'
             ParentColor = False
             ParentShowHint = False
           end
           object bbInventory: TBitBtn
-            Left = 541
+            Left = 545
             Height = 32
             Hint = 'Boek de hoeveelheden af van de voorraad'
-            Top = 285
+            Top = 323
             Width = 103
+            Anchors = [akTop]
             Caption = 'Boek af'
             Glyph.Data = {
               B6020000424DB60200000000000036000000280000000A000000100000000100
@@ -2599,22 +2785,31 @@ object frmMain: TfrmMain
             TabOrder = 16
           end
           object lBoilTime: TLabel
-            Left = 484
+            AnchorSideTop.Control = fseBoilTime
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = fseBoilTime
+            Left = 496
             Height = 22
-            Top = 5
+            Top = 12
             Width = 62
             Alignment = taRightJustify
+            Anchors = [akTop, akRight]
+            BorderSpacing.Right = 5
             Caption = 'Kooktijd:'
             ParentColor = False
             ParentShowHint = False
           end
           object fseBoilTime: TFloatSpinEdit
-            Left = 548
-            Height = 28
+            AnchorSideTop.Control = gbIngredients
+            AnchorSideRight.Control = lBoilTimeUnit
+            Left = 563
+            Height = 36
             Hint = 'Kooktijd van het wort'
-            Top = -1
+            Top = 5
             Width = 61
-            AutoSize = False
+            Anchors = [akTop, akRight]
+            BorderSpacing.Top = 5
+            BorderSpacing.Right = 5
             DecimalPlaces = 0
             MaxValue = 240
             ParentShowHint = False
@@ -2622,10 +2817,19 @@ object frmMain: TfrmMain
             TabOrder = 7
           end
           object lBoilTimeUnit: TLabel
-            Left = 613
+            AnchorSideLeft.Control = fseBoilTime
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = fseBoilTime
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = gbIngredients
+            AnchorSideRight.Side = asrBottom
+            Left = 629
             Height = 22
-            Top = 5
+            Top = 12
             Width = 32
+            Anchors = [akTop, akRight]
+            BorderSpacing.Left = 5
+            BorderSpacing.Right = 5
             Caption = 'min.'
             Font.Height = 15
             ParentColor = False
@@ -2633,20 +2837,29 @@ object frmMain: TfrmMain
             ParentShowHint = False
           end
           object lABVest: TLabel
-            Left = 6
+            AnchorSideLeft.Control = gbIngredients
+            AnchorSideTop.Control = eABVest
+            AnchorSideTop.Side = asrCenter
+            Left = 5
             Height = 22
-            Top = 61
+            Top = 94
             Width = 116
+            BorderSpacing.Left = 5
             Caption = 'Geschat alcohol:'
             ParentColor = False
             ParentShowHint = False
           end
           object eBUGU: TEdit
-            Left = 328
-            Height = 27
-            Top = 28
+            AnchorSideTop.Control = fseIBU
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = fseIBU
+            AnchorSideRight.Side = asrBottom
+            Left = 352
+            Height = 36
+            Top = 46
             Width = 61
-            AutoSize = False
+            Anchors = [akTop, akRight]
+            BorderSpacing.Top = 5
             Color = clScrollBar
             ParentShowHint = False
             ReadOnly = True
@@ -2655,12 +2868,17 @@ object frmMain: TfrmMain
             TabOrder = 5
           end
           object eColor2: TEdit
-            Left = 269
+            AnchorSideTop.Control = eBUGU
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = fseIBU
+            AnchorSideRight.Side = asrBottom
+            Left = 293
             Height = 36
-            Top = 55
+            Top = 87
             Width = 120
             Alignment = taCenter
-            AutoSize = False
+            Anchors = [akTop, akRight]
+            BorderSpacing.Top = 5
             Color = clScrollBar
             ParentShowHint = False
             ReadOnly = True
@@ -2670,10 +2888,14 @@ object frmMain: TfrmMain
             Text = '0 EBC'
           end
           object eABVest: TEdit
-            Left = 110
+            AnchorSideLeft.Control = eFGest
+            AnchorSideTop.Control = eFGest
+            AnchorSideTop.Side = asrBottom
+            Left = 129
             Height = 36
-            Top = 55
+            Top = 87
             Width = 84
+            BorderSpacing.Top = 5
             Color = clScrollBar
             ParentShowHint = False
             ReadOnly = True
@@ -2683,10 +2905,11 @@ object frmMain: TfrmMain
             Text = 'eABVest'
           end
           object fseGrid: TFloatSpinEdit
-            Left = 323
+            Left = 470
             Height = 28
-            Top = 319
+            Top = 320
             Width = 66
+            Anchors = []
             AutoSize = False
             DecimalPlaces = 3
             MaxValue = 1000000
@@ -2698,11 +2921,16 @@ object frmMain: TfrmMain
             Visible = False
           end
           object eFGest: TEdit
-            Left = 110
-            Height = 27
-            Top = 28
+            AnchorSideLeft.Control = lFGest
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = fseOG
+            AnchorSideTop.Side = asrBottom
+            Left = 129
+            Height = 36
+            Top = 46
             Width = 84
-            AutoSize = False
+            BorderSpacing.Left = 5
+            BorderSpacing.Top = 5
             Color = clScrollBar
             ParentShowHint = False
             ReadOnly = True
@@ -2711,27 +2939,45 @@ object frmMain: TfrmMain
             TabOrder = 2
           end
           object lEstOG: TLabel
-            Left = 194
+            AnchorSideLeft.Control = fseOG
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = fseOG
+            AnchorSideTop.Side = asrCenter
+            Left = 213
             Height = 22
-            Top = 5
+            Top = 12
             Width = 20
+            BorderSpacing.Left = 5
             Caption = 'SG'
             ParentColor = False
           end
           object lCosts: TLabel
-            Left = 414
+            AnchorSideTop.Control = eCosts
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = eCosts
+            Left = 390
             Height = 22
-            Top = 325
+            Top = 360
             Width = 53
+            Anchors = [akTop, akRight]
+            BorderSpacing.Right = 5
             Caption = 'Kosten:'
             ParentColor = False
           end
           object eCosts: TEdit
-            Left = 463
-            Height = 29
-            Top = 319
-            Width = 72
-            AutoSize = False
+            AnchorSideTop.Control = sgIngredients
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = sgIngredients
+            AnchorSideRight.Side = asrBottom
+            AnchorSideBottom.Control = gbIngredients
+            AnchorSideBottom.Side = asrBottom
+            Left = 448
+            Height = 36
+            Top = 353
+            Width = 88
+            Anchors = [akTop, akRight, akBottom]
+            BorderSpacing.Top = 5
+            BorderSpacing.Bottom = 5
             Color = clScrollBar
             ParentShowHint = False
             ReadOnly = True
@@ -2740,10 +2986,11 @@ object frmMain: TfrmMain
             Text = 'â‚¬'
           end
           object sbGristWizard: TSpeedButton
-            Left = 612
+            Left = 624
             Height = 32
-            Top = 114
+            Top = 152
             Width = 32
+            Anchors = [akTop]
             Color = clDefault
             Glyph.Data = {
               C6060000424DC606000000000000360000002800000015000000140000000100
@@ -2808,10 +3055,11 @@ object frmMain: TfrmMain
             ParentShowHint = False
           end
           object sbHopWizard: TSpeedButton
-            Left = 612
+            Left = 624
             Height = 32
-            Top = 148
+            Top = 186
             Width = 32
+            Anchors = [akTop]
             Color = clDefault
             Glyph.Data = {
               C6060000424DC606000000000000360000002800000015000000140000000100
@@ -2877,10 +3125,19 @@ object frmMain: TfrmMain
           end
         end
         object gbVisual: TGroupBox
-          Left = 0
-          Height = 141
-          Top = 484
-          Width = 653
+          AnchorSideLeft.Control = tsRecipe
+          AnchorSideTop.Control = gbIngredients
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = tsRecipe
+          AnchorSideRight.Side = asrBottom
+          AnchorSideBottom.Control = tsRecipe
+          AnchorSideBottom.Side = asrBottom
+          Left = 5
+          Height = 157
+          Top = 605
+          Width = 670
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BorderSpacing.Around = 5
           Caption = 'Recept en klassegrenzen'
           ParentShowHint = False
           TabOrder = 1
@@ -2889,8 +3146,8 @@ object frmMain: TfrmMain
       object tsWater: TTabSheet
         Hint = 'Voer maischschema, waterprofiel en geplande volumes in'
         Caption = 'Maischen, water'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         ParentShowHint = False
         object gbMashing: TGroupBox
           Left = 0
@@ -3755,8 +4012,8 @@ object frmMain: TfrmMain
       object tsBrewday: TTabSheet
         Hint = 'Voer metingen tijdens de brouwdag in'
         Caption = 'Metingen op de brouwdag'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         ParentShowHint = False
         object gbMeasMash: TGroupBox
           Left = 4
@@ -5156,8 +5413,8 @@ object frmMain: TfrmMain
       object tsFermentation: TTabSheet
         Hint = 'Voer gegevens over de vergisting in'
         Caption = 'Vergisting'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         ParentShowHint = False
         object gbYeast: TGroupBox
           Left = 4
@@ -5558,7 +5815,7 @@ object frmMain: TfrmMain
             TabOrder = 0
             object tsMeasSimple: TTabSheet
               Caption = 'Eenvoudig'
-              ClientHeight = 345
+              ClientHeight = 346
               ClientWidth = 640
               object lStartTempPrimary: TLabel
                 Left = 6
@@ -5989,7 +6246,7 @@ object frmMain: TfrmMain
             end
             object tsMeasExt: TTabSheet
               Caption = 'Uitgebreid / TControl'
-              ClientHeight = 345
+              ClientHeight = 346
               ClientWidth = 640
               ParentFont = False
               object cbTemp1: TCheckBox
@@ -6317,8 +6574,8 @@ object frmMain: TfrmMain
       object tsPackaging: TTabSheet
         Hint = 'Voer gegevens over het afvullen in'
         Caption = 'Afvullen, proeven'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         ParentShowHint = False
         object gbBottleDates: TGroupBox
           Left = 0
@@ -7173,8 +7430,8 @@ object frmMain: TfrmMain
       object tsNotes: TTabSheet
         Hint = 'Voer notities in'
         Caption = 'Notities'
-        ClientHeight = 647
-        ClientWidth = 658
+        ClientHeight = 767
+        ClientWidth = 680
         ParentShowHint = False
         object gbBrewers: TGroupBox
           Left = 0
@@ -7260,7 +7517,7 @@ object frmMain: TfrmMain
     Left = 0
     Height = 82
     Top = 0
-    Width = 1101
+    Width = 1123
     ActivePage = tsOptions
     Align = alTop
     ParentFont = False
@@ -7269,12 +7526,12 @@ object frmMain: TfrmMain
     object tsFile: TTabSheet
       Caption = 'Bestand'
       ClientHeight = 47
-      ClientWidth = 1097
+      ClientWidth = 1119
       object tbFile: TToolBar
         Left = 0
         Height = 47
         Top = 0
-        Width = 1097
+        Width = 1119
         Align = alClient
         ButtonHeight = 48
         ButtonWidth = 48
@@ -7387,12 +7644,12 @@ object frmMain: TfrmMain
     object tsDatabases: TTabSheet
       Caption = 'Databanken'
       ClientHeight = 47
-      ClientWidth = 1097
+      ClientWidth = 1119
       object tbDatabases: TToolBar
         Left = 0
         Height = 53
         Top = 0
-        Width = 1097
+        Width = 1119
         ButtonHeight = 48
         ButtonWidth = 48
         Caption = 'tbDatabases'
@@ -7581,13 +7838,13 @@ object frmMain: TfrmMain
     object tsAnalysis: TTabSheet
       Caption = 'Analyse'
       ClientHeight = 47
-      ClientWidth = 1097
+      ClientWidth = 1119
       TabVisible = False
       object ToolBar1: TToolBar
         Left = 0
         Height = 47
         Top = 0
-        Width = 1097
+        Width = 1119
         Align = alClient
         ButtonHeight = 48
         ButtonWidth = 48
@@ -7685,7 +7942,7 @@ object frmMain: TfrmMain
     object tsOptions: TTabSheet
       Caption = 'Instellingen'
       ClientHeight = 47
-      ClientWidth = 1097
+      ClientWidth = 1119
       ParentFont = False
       object pSettings1: TPanel
         Left = 356
