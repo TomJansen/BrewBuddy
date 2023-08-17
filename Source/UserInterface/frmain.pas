@@ -175,6 +175,7 @@ type
     miCloudDelete: TMenuItem;
     miCloudToBrews: TMenuItem;
     opdLogo: TOpenPictureDialog;
+    pAdd: TPanel;
     pcRight: TPageControl;
     pCloudButtons: TPanel;
     pbProgress: TProgressBar;
